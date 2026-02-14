@@ -1,0 +1,28 @@
+#+BEGIN_EXPORT html
+---
+title: "OrgMode로 쓰는 페이지"
+layout: single
+author_profile: true
+read_time: true
+---
+#+END_EXPORT
+
+* Heading 1
+This is a post written in Org-mode.
+*   [[https://mademistakes.com/work/jekyll-themes/minimal-mistakes/][Minimal Mistakes]] allows for custom layouts.
+
+** Subheading
+- List item 1
+- List item 2
+
+** 코드 쓰기
+#+begin_src C++
+#include <iostream>
+using namespace std;
+
+int main(int argc, char* argv[])
+{
+  cout << "Hello"" << endl;
+  return 0;
+}
+#+end_src
