@@ -1,3 +1,19 @@
+---
+title: Windows용 Emacs 설치 환경설정
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 
 ### tango-dark theme 선택
 ```
