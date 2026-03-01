@@ -1,9 +1,9 @@
 ---
-layout: default
 title: About
+layout: single
 permalink: /about/
+comments: false
 ---
-
 Hello About
 
 
