@@ -2,35 +2,44 @@ name: Convert Org to Markdown
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - '**.org' # .org 파일이 포함된 push에만 실행
 
 jobs:
   convert:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      
-      - name: Convert Org to Markdown using Pandoc Docker
-        # Use the official pandoc/core Docker image. Specifying a version is recommended
-        # to avoid breaking changes (e.g., :3.8)
-        uses: docker://pandoc/core:3.8 
+      - name: Checkout code
+        uses: [actions/checkout](https://github.com)@v4
         with:
-          # The entrypoint is 'pandoc' by default in the image
-          args: "--from=org --to=gfm yourfile.org -o yourfile.md"
-          
-      - name: Upload converted file as artifact
-        uses: actions/upload-artifact@v4
+          fetch-depth: 0 # 변경 사항 비교를 위해 필요
+
+      - name: Get changed org files
+        id: changed-files
+        uses: [tj-actions/changed-files](https://github.com)@v44
         with:
-          name: markdown-file
-          path: yourfile.md
-          
-      - name: Commit converted file (Optional)
-        # An optional step to commit the converted file back to the repository
+          files: |
+             **.org
+
+      - name: Install Pandoc
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: sudo apt-get install -y pandoc
+
+      - name: Convert Org to MD
+        if: steps.changed-files.outputs.any_changed == 'true'
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git add yourfile.md
-          git commit -m "Automated Pandoc conversion: Update yourfile.md" || echo "No changes to commit"
-          git push origin main || echo "No new file to push"
+          for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
+            # 파일명에서 확장자 제거 후 .md 붙이기
+            output="${file%.org}.md"
+            [pandoc](https://pandoc.org) "$file" -o "$output"
+            echo "Converted $file to $output"
+          done
+
+      - name: Commit and Push changes
+        if: steps.changed-files.outputs.any_changed == 'true'
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          # 변경사항이 있을 때만 커밋
+          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: auto-convert org to md" && git push)
