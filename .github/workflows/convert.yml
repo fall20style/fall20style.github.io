@@ -1,0 +1,36 @@
+name: Convert Org to Markdown
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Convert Org to Markdown using Pandoc Docker
+        # Use the official pandoc/core Docker image. Specifying a version is recommended
+        # to avoid breaking changes (e.g., :3.8)
+        uses: docker://pandoc/core:3.8 
+        with:
+          # The entrypoint is 'pandoc' by default in the image
+          args: "--from=org --to=gfm yourfile.org -o yourfile.md"
+          
+      - name: Upload converted file as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: markdown-file
+          path: yourfile.md
+          
+      - name: Commit converted file (Optional)
+        # An optional step to commit the converted file back to the repository
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add yourfile.md
+          git commit -m "Automated Pandoc conversion: Update yourfile.md" || echo "No changes to commit"
+          git push origin main || echo "No new file to push"
