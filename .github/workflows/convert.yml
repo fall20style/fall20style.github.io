@@ -1,45 +1,23 @@
-name: Convert Org to Markdown
-
+name: CI
 on:
-  push:
-    paths:
-      - '**.org' # .org 파일이 포함된 push에만 실행
-      
+  pull_request:
+    branches:
+      - main
+
 jobs:
-  convert:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: [actions/checkout](https://github.com)@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # 변경 사항 비교를 위해 필요
+          fetch-depth: 0 # 모든 변경 이력을 가져와야 함
 
-      - name: Get changed org files
+      - name: Get changed files
         id: changed-files
-        uses: [tj-actions/changed-files](https://github.com)@v44
-        with:
-          files: |
-             **.org
+        uses: tj-actions/changed-files@v45 # 최신 버전 사용 권장
 
-      - name: Install Pandoc
-        if: steps.changed-files.outputs.any_changed == 'true'
-        run: sudo apt-get install -y pandoc
-
-      - name: Convert Org to MD
-        if: steps.changed-files.outputs.any_changed == 'true'
+      - name: List all changed files
         run: |
           for file in ${{ steps.changed-files.outputs.all_changed_files }}; do
-            # 파일명에서 확장자 제거 후 .md 붙이기
-            output="${file%.org}.md"
-            [pandoc](https://pandoc.org) "$file" -o "$output"
-            echo "Converted $file to $output"
+            echo "$file was changed"
           done
-
-      - name: Commit and Push changes
-        if: steps.changed-files.outputs.any_changed == 'true'
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add .
-          # 변경사항이 있을 때만 커밋
-          git diff --quiet && git diff --staged --quiet || (git commit -m "docs: auto-convert org to md" && git push)
