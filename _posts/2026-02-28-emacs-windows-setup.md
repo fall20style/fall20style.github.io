@@ -25,15 +25,15 @@ tango-dark <RET>
 (load-theme 'tango-dark t)
 ```
 
-### DONE 이맥스 windows에서 설치하기
+### 이맥스 windows에서 설치하기
 - https://ftp.gnu.org/gnu/emacs/windows/emacs-30/
 
-### DONE Windows config 파일 위치
+### Windows config 파일 위치
 ```
 C:\Users\fall2\AppData\Roaming\.emacs.d\init.el
 ```
 
-### DONE 이맥스 script 실행하기
+### 이맥스 script 실행하기
 ``` elisp
 (if nil
   (message "true");;여기 닫는 괄호에서 실행하면 "true"가 출력됩니다.
