@@ -1,0 +1,36 @@
+---
+layout: post
+title: "Using org-mode with Jekyll"
+excerpt: Introduce how to use Emacs's Org-mode with Jekyll to generate GitHub Pages
+---
+
+
+* Org mode로 jekyll page 만들기
+
+** init.el 설정하기
+
+#+begin_src elisp
+;; org mode publishing
+;; https://thackl.github.io/blogging-with-emacs-org-mode-and-jekyll
+(setq org-publish-project-alist
+      '(("fall20style.github.io" ;; my blog project (just a name)
+         ;; Path to org files.
+         :base-directory "C:/Users/fall2/work/gitdir/fall20style.github.io/_org"
+         :base-extension "org"
+         ;; Path to Jekyll Posts
+         :publishing-directory "C:/Users/fall2/work/gitdir/fall20style.github.io/_posts/"
+         :recursive t
+         :publishing-function org-html-publish-to-html
+         :headline-levels 4
+         :html-extension "html"
+         :body-only t
+         )))
+#+end_src
+
+
+** publish를 위한 옵션
+이건 org mode로 만든 page입니다.
+
+#+begin_example
+C-c C-e P f
+#+end_example
