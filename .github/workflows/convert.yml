@@ -4,7 +4,7 @@ on:
   push:
     paths:
       - '**.org' # .org 파일이 포함된 push에만 실행
-
+      
 jobs:
   convert:
     runs-on: ubuntu-latest
