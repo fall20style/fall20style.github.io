@@ -4,6 +4,8 @@
 
 구글 검색으로 확인한 내용
 
+yourfile.org가 아니라, 경로를 얻어서 변경해야 한다.
+
 #+begin_example
 name: Convert Org to Markdown
 
