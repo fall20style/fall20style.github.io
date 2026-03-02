@@ -7,7 +7,8 @@ comments: true
 share: true
 related: true
 popular: true
-tags: Emacs
+tags:
+  - Emacs
 categories:
 toc: true
 toc_sticky: true
