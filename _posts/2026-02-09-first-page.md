@@ -7,6 +7,7 @@ comments: true
 share: true
 related: true
 popular: true
+tags: Git
 categories:
 toc: true
 toc_sticky: true
