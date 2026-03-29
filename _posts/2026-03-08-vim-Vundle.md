@@ -9,6 +9,7 @@ related: true
 popular: true
 tags:
   - Git
+  - Vim
 categories:
 toc: true
 toc_sticky: true
