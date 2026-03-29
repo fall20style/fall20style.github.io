@@ -1,3 +1,22 @@
+---
+title: Protobuf, protoc와 gRPC의 관계
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - ProtoBuf
+  - gRPC
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 ## Protobuf와 gRPC의 관계
 
 protoc (Protocol Buffer Compiler)가 .proto 파일을 읽어서 통신에 필요한 복잡한 로직을 담은 파이썬 코드를 자동으로 생성해 줌.
