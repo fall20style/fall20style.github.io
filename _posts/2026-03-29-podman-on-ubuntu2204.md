@@ -1,3 +1,21 @@
+---
+title: Podman 설치 (Ubuntu 20.04)
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - 컨테이너기술
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 ## Ubuntu 20.04 Podman 설치하기
 
 ### Kubic 프로젝트 저장소 추가
