@@ -1,3 +1,20 @@
+---
+title: Podman Nginx 실습
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Emacs
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ## Podman 실행 히스토리 분석
 사용자의 터미널 히스토리 중 Podman 명령어 흐름과 의미를 정리함.
