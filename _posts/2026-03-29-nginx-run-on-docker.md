@@ -1,3 +1,21 @@
+---
+title: Docker Nginx 실습
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Emacs
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 ## Docker Nginx 실습
 
 ```
