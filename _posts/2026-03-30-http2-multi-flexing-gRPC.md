@@ -1,3 +1,22 @@
+---
+title: HTTP/2 멀티플렉싱과 gRPC
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - ProtoBuf
+  - gRPC
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 ## HTTP/2 멀티플렉싱
 
 HTTP/2 멀티플렉싱은 하나의 TCP 연결 안에서 여러 개의 요청과 응답을 동시에(병렬로) 주고받는 기술임.
