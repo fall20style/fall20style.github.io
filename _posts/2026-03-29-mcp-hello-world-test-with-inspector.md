@@ -1,10 +1,26 @@
-MCP Inspector와 MCP hello world 예제 테스트
+---
+title: MCP Inspector와 MCP hello world 예제 테스트
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - MCP기술
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ### 1. 테스트 환경 준비
 
-* 사전 설치: Python 3.10 이상, Node.js(npx 사용용) 설치 필요.
-* 라이브러리: mcp[cli], httpx 등 필요한 패키지 설치 완료 상태여야 함.
-* 서버 코드: FastMCP 등으로 작성된 server.py 파일 준비.
+* 사전 설치: Python 3.10 이상, Node.js(npx 사용) 설치 필요.
+* 라이브러리: mcp, httpx 등 필요한 패키지 설치 필요.
+* 서버 코드: FastMCP 등으로 작성된 server.py 파일 준비. (Gemini에 질문하면 코드 나옴)
 
 ### 2. 테스트 실행 순서
 
