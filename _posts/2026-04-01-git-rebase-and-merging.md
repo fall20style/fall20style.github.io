@@ -9,7 +9,7 @@ related: true
 popular: true
 tags:
   - git
-  categories:
+categories:
 toc: true
 toc_sticky: true
 toc_label: 목차
