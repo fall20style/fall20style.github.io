@@ -1,3 +1,22 @@
+---
+title: Structured Bindings
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Modern C++
+  - CP
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 # Structured Bindings
 
 C++17부터 도입된 Structured Bindings는 pair, tuple, 구조체, 배열의 값을 한 번에 여러 변수로 분해해서 받는 문법.
