@@ -1,7 +1,7 @@
 ---
 title: 책읽기
 layout: single
-permalink: /Books/
+permalink: /books/
 comments: false
 ---
 
