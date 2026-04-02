@@ -43,7 +43,7 @@ target_include_directories(app PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
 ## main.cpp 코드 적용 예시
 소스 코드 내에서 #ifdef를 사용하여 실제 객체와 Mock 객체 사용 구간을 나눔.
 
-```
+``` c++
 #include <iostream>
 #include <string>
 
