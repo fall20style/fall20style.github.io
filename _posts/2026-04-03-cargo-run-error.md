@@ -1,3 +1,21 @@
+---
+title: package axum-core v0.5.6 cannot be built
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 cargo run error - `package `axum-core v0.5.6` cannot be built`
 
