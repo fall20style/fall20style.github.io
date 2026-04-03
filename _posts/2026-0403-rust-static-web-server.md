@@ -1,6 +1,21 @@
-
-
-static web page server
+---
+title: static web page server
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ### 구조
 ```
