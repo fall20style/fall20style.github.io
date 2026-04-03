@@ -1,4 +1,21 @@
-
+---
+title: axum으로 GET/POST 예제
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ### 프로젝트 준비
 ```bash
