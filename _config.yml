@@ -330,4 +330,5 @@ defaults:
       path: "_posts/books"
       type: posts
     values:
-      categories: B2026
+        #categories: B2026
+      path: /B2026/
