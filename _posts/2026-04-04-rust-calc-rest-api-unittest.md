@@ -1,3 +1,21 @@
+---
+title: Rust Axum으로 Unit Test하고 실행
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ## 코드 위치
 https://github.com/fall20style/rust_prep/tree/main/01_axum_test_demo
