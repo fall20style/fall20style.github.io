@@ -38,7 +38,7 @@ https://github.com/fall20style/rust_prep/tree/main/01_axum_test_demo
 
 ### 2. 비즈니스 로직 (Handlers)
 
-```
+``` rust
 async fn compute(Json(payload): Json<CalcInput>) -> Json<CalcOutput> {
     let sum = payload.a + payload.b;
     Json(CalcOutput { result: sum })
@@ -52,7 +52,7 @@ async fn compute(Json(payload): Json<CalcInput>) -> Json<CalcOutput> {
 
 ### 3. 라우팅 설정 (App Router)
 
-```
+``` rust
 pub fn app() -> Router {
     Router::new()
         .route("/user", get(|| async { ... }))
@@ -67,7 +67,7 @@ pub fn app() -> Router {
 
 ### 4. 서버 실행 (Main)
 
-```
+``` rust
 #[tokio::main]async fn main() {
     let listener = tokio::net::TcpListener::bind("0.0.0.0:3000").await.unwrap();
     axum::serve(listener, app()).await.unwrap();
@@ -80,7 +80,7 @@ pub fn app() -> Router {
 
 ### 5. 테스트 모듈 (Tests)
 
-```
+``` rust
 #[cfg(test)]mod tests { ... }
 ```
 
@@ -93,7 +93,7 @@ pub fn app() -> Router {
 ### 1. 프로젝트 생성 및 이동
 
 새 프로젝트 만들고 폴더로 들어감
-```
+``` bash
 cargo new axum_test_demo
 cd axum_test_demo
 ```
@@ -101,7 +101,7 @@ cd axum_test_demo
 ### 2. 라이브러리 설치 (의존성 추가)
 
 서버랑 JSON 처리에 필요한 애들임
-```
+``` bash
 cargo add axum@0.7
 cargo add serde@1.0 --features derive
 cargo add serde_json@1.0
@@ -116,22 +116,24 @@ cargo add http-body-util@0.1 --dev
 ### 3. 코드 검사 및 빌드
 
 코드에 문법 에러 없는지 빠르게 확인함
-```
+``` bash
 cargo check
 ```
 전체 프로젝트 컴파일해서 실행 파일 만듦
-``
+``` bash
 cargo build
 ```
 
 ### 4. 테스트 및 실행
 
 작성한 테스트 케이스(GET, POST, 계산기) 다 돌려봄
-```
+
+``` bash
 cargo test
 ```
 실제 서버 띄워서 대기시킴 (http://localhost:3000)
-```
+
+``` bash
 cargo run
 ```
 
@@ -139,6 +141,6 @@ cargo run
 
 들여쓰기랑 줄바꿈 알아서 예쁘게 맞춰줌
 
-```
+``` bash
 cargo fmt
 ```
