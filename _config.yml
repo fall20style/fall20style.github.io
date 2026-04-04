@@ -43,7 +43,7 @@ comments:
   facebook:
     # https://developers.facebook.com/docs/plugins/comments
     appid                :
-    num_posts            : # 5 (default)
+    num_posts            : 10 # 5 (default)
     colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
@@ -326,3 +326,8 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "_posts/books"
+      type: posts
+    values:
+      categories: B2026
