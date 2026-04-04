@@ -326,8 +326,4 @@ defaults:
       comments: # true
       share: true
       related: true
-        - scope:
-            path: "_posts/books"
-      type: posts
-      values:
-        categories: B2026
+
