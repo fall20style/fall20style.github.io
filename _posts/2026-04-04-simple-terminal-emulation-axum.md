@@ -54,3 +54,7 @@ Rust의 Axum 프레임워크와 WebSockets, 그리고 xterm.js를 사용하여 �
     -   **xterm.js (v5.3+):** 브라우저 기반 터미널 에뮬레이터 UI.
 4.  **운영 체제:**
     -   Linux 또는 macOS (PTY 지원이 원활한 환경 권장).
+
+
+## 작업 경로
+- https://github.com/fall20style/rust_prep/tree/main/05_gemini_harness_axum_bash_cli
