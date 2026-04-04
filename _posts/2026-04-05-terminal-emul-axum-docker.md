@@ -55,3 +55,4 @@ axum_bash_cli$ cargo run
 
 ### 작업 경로
 - https://github.com/fall20style/rust_prep/tree/main/05_gemini_harness_axum_bash_cli
+- https://github.com/fall20style/rust_prep/commit/c8dd22d1aad104f561f2e97946475a11dd1b96d5
