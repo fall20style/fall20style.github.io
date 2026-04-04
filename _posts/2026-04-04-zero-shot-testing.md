@@ -1,3 +1,21 @@
+---
+title: Zero-shot Testing이란?
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ## 1. Zero-shot Testing 개념
 
