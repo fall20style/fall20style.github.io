@@ -38,6 +38,11 @@ Rust의 Axum 프레임워크와 WebSockets, 그리고 xterm.js를 사용하여 �
 -   **Backend (Rust/Axum):** WebSocket 연결을 관리하고, PTY 마스터 측의 입출력을 중계.
 -   **Execution Layer (PTY/Bash):** PTY 슬레이브 측에서 실제 `bash` 쉘이 실행되며, 사용자로부터 전달된 명령을 수행.
 
+## Deployment Diagram
+
+<img width="1140" height="688" alt="Image" src="https://github.com/user-attachments/assets/30cb781c-b5c8-43b8-9fed-b387a590be91" />
+
+
 ## 소프트웨어 요구사항 (SW Requirements)
 
 이 시스템을 구동하고 개발하기 위해 필요한 주요 구성 요소:
@@ -54,6 +59,8 @@ Rust의 Axum 프레임워크와 WebSockets, 그리고 xterm.js를 사용하여 �
     -   **xterm.js (v5.3+):** 브라우저 기반 터미널 에뮬레이터 UI.
 4.  **운영 체제:**
     -   Linux 또는 macOS (PTY 지원이 원활한 환경 권장).
+
+
 
 
 ## 작업 경로
