@@ -26,61 +26,7 @@ description: desc가 여기에
 ### 2. GitHub Actions 워크플로우 코드 (ci-cd.yml)
 프로젝트 루트의 .github/workflows/ci-cd.yml에 작성함.
 
-``` yml
-name: Subdir Rust Docker CI/CD
-on:
-  push:
-    branches: [ "main" ]
-    paths:
-      - '07_axum_bollard_term/**' # 1. 특정 폴더 변경 시에만 실행함
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-  WORKING_DIRECTORY: 07_axum_bollard_term # 2. 서브 디렉터리 경로 변수화함
-jobs:
-  build-and-push:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
-    
-    defaults:
-      run:
-        working-directory: ${{ env.WORKING_DIRECTORY }} # 3. 모든 명령어를 해당 폴더 내에서 실행함
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      # 4. 의존성 라이브러리 캐싱으로 빌드 시간 대폭 단축함
-      - name: Set up Rust cache
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.cargo/bin/
-            ~/.cargo/registry/index/
-            ~/.cargo/registry/cache/
-            ${{ env.WORKING_DIRECTORY }}/target/
-            key: ${{ runner.os }}-cargo-${{ hashFiles(format('{0}/Cargo.lock', env.WORKING_DIRECTORY)) }}
-
-      - name: Build Binary
-        run: cargo build --release
-
-      - name: Log in to the Container registry
-        uses: docker/login-action@v3
-        with:
-          registry: ${{ env.REGISTRY }}
-          username: ${{ github.actor }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      # 5. 빌드 컨텍스트를 서브 디렉터리로 지정하여 도커 이미지 제작함
-      - name: Build and push Docker image
-        uses: docker/build-push-action@v5
-        with:
-          context: ${{ env.WORKING_DIRECTORY }}
-          push: true
-          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
-```
+- https://github.com/fall20style/rust_prep/actions/workflows/CICD-07-axum-bollard-term.yml
 
 ### 3. 핵심 설정 항목 설명
 
