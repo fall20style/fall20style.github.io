@@ -108,13 +108,13 @@ docker pull ghcr.io/fall20style/rust_prep:latest
 
 호스트 포트 3000번과 도커 소켓을 연결하여 서버를 띄움.
 
-# 기존 서버 컨테이너가 있다면 삭제함
+* 기존 서버 컨테이너가 있다면 삭제함
 
 ``` bash
 docker rm -f my-web-terminal 2>/dev/null
 ```
 
-# 서버 실행 (마지막에 이미지 주소 확인 필수)
+* 서버 실행 (마지막에 이미지 주소 확인 필수)
 
 ``` bash
 docker run -d \
@@ -127,12 +127,12 @@ docker run -d \
 ## 5단계: 상태 확인 및 접속
 서버가 Up 상태인지 확인하고 브라우저로 접속함.
 
-# 두 컨테이너가 모두 'Up'인지 확인함
+* 두 컨테이너가 모두 'Up'인지 확인함
 
 ``` bash
 docker ps
 ```
-# 서버 로그에 에러가 없는지 확인함
+* 서버 로그에 에러가 없는지 확인함
 
 ``` bash
 docker logs my-web-terminal
