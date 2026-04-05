@@ -19,8 +19,6 @@ toc_label: 목차
 description: desc가 여기에
 ---
 
-## Axum-xterm.js 기반 Docker Web Terminal
-
 - 비동기 이벤트 기반의 스트리밍 프록시 구조
 
 ### 시스템 배치도 (Deployment Diagram)
