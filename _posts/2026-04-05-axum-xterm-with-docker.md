@@ -1,3 +1,23 @@
+---
+title: Axum-xterm.js 기반 Docker Web Terminal
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - axum
+  - Rust
+  - pty
+  - xterm.js
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ## Axum-xterm.js 기반 Docker Web Terminal
 
