@@ -57,3 +57,6 @@
 ### 디버깅
 - 검은 화면에서 멈춤
   - xterm.js, xterm.css를 받아서 local에 저장함
+
+### 스크린샷
+<img width="430" height="319" alt="Image" src="https://github.com/user-attachments/assets/b320c230-b3d7-49d1-8948-c48c58187612" />
