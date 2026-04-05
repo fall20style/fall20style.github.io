@@ -1,5 +1,5 @@
 ---
-title: Axum-Docker 웹 터미널 최종 수정 가이드
+title: Axum-Docker 웹 터미널 최종 가이드
 layout: single
 author_profile: true
 read_time: true
@@ -22,6 +22,7 @@ description: desc가 여기에
 ### 1. 프로젝트 구조 (최종)
 모든 소스와 리소스는 07_axum_bollard_term 폴더 내에 위치함.
 
+```
 07_axum_bollard_term/
 ├── Cargo.toml
 ├── Dockerfile           # nightly 이미지 및 경로 수정됨
@@ -30,6 +31,7 @@ description: desc가 여기에
     ├── index.html       # xterm.js 로컬 호출 수정됨
     ├── xterm.js         # wget으로 다운로드 완료함
     └── xterm.css        # wget으로 다운로드 완료함
+```
 
 ### 2. 주요 코드 수정 사항
 
@@ -68,9 +70,125 @@ description: desc가 여기에
 3. 이미지 갱신: `docker pull ghcr.io/fall20style/rust_prep:latest`
 4. 서버 컨테이너 실행:
 
-```   
+``` bash
    docker run -d -p 3000:3000 \
      -v /var/run/docker.sock:/var/run/docker.sock \
      --name my-web-terminal \
      ghcr.io/fall20style/rust_prep:latest
-```   
+```
+
+## Test 절차
+
+### 1단계: 대상 컨테이너 실행 (Terminal용)
+웹 터미널로 접속할 실제 우분투 환경을 먼저 만듦.
+
+* 이미 존재한다면 지우고 새로 만드는 것이 깔끔함
+
+``` bash
+docker rm -f my_terminal 2>/dev/null
+docker run -d --name my_terminal ubuntu sleep infinity
+```
+
+### 2단계: 도커 소켓 권한 개방 (중요)
+
+Axum 서버 컨테이너가 호스트의 도커 엔진에 접근할 수 있게 권한을 열어줌.
+
+``` bash
+sudo chmod 666 /var/run/docker.sock
+```
+
+### 3단계: 최신 서버 이미지 다운로드 (Pull)
+
+CI/CD로 빌드된 최신 이미지를 GitHub에서 가져옴.
+``` bash
+docker pull ghcr.io/fall20style/rust_prep:latest
+```
+
+## 4단계: 웹 터미널 서버 실행 (Run)
+
+호스트 포트 3000번과 도커 소켓을 연결하여 서버를 띄움.
+
+# 기존 서버 컨테이너가 있다면 삭제함
+
+``` bash
+docker rm -f my-web-terminal 2>/dev/null
+```
+
+# 서버 실행 (마지막에 이미지 주소 확인 필수)
+
+``` bash
+docker run -d \
+  -p 3000:3000 \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  --name my-web-terminal \
+  ghcr.io/fall20style/rust_prep:latest
+```
+
+## 5단계: 상태 확인 및 접속
+서버가 Up 상태인지 확인하고 브라우저로 접속함.
+
+# 두 컨테이너가 모두 'Up'인지 확인함
+
+``` bash
+docker ps
+```
+# 서버 로그에 에러가 없는지 확인함
+
+``` bash
+docker logs my-web-terminal
+```
+
+## 6단계: 브라우저 확인
+주소창에 입력함.
+
+* `http://localhost:3000` 접속
+* 검은 화면 클릭 후 Enter 키 입력하여 프롬프트 확인
+
+## 요약
+
+1. my_terminal (대상) 실행함.
+2. chmod 666 (권한) 설정함.
+3. my-web-terminal (서버) 실행함.
+4. localhost:3000 접속함.
+
+
+## Log 확인
+```
+$ sudo chmod 666 /var/run/docker.sock
+```
+
+```
+$ docker pull ghcr.io/fall20style/rust_prep:latestlatest: Pulling from fall20style/rust_prep
+77dab3318d44: Already exists
+c166f9789bb8: Pull complete
+051c2c6b6bdb: Pull complete
+4f4fb700ef54: Pull complete
+Digest: sha256:f5df18d651b8c06082a63d2e83307f7573164cb77fa8a32dfb2e6ec12e448fde
+Status: Downloaded newer image for ghcr.io/fall20style/rust_prep:latest
+ghcr.io/fall20style/rust_prep:latest
+```
+
+```
+$ docker rm -f my-web-terminal 2>/dev/null
+my-web-terminal
+```
+
+
+```
+$ docker run -d   -p 3000:3000   -v /var/run/docker.sock:/var/run/docker.sock   --name my-web-terminal   ghcr.io/fall20style/rust_prep:latest
+8d289187f9cccb69198ea3cab267c44931f47d0846a8dc099468686598009075
+```
+
+```
+$ docker ps
+CONTAINER ID   IMAGE                                  COMMAND                   CREATED         STATUS         PORTS                                         NAMES
+8d289187f9cc   ghcr.io/fall20style/rust_prep:latest   "/usr/local/bin/my-d…"   5 seconds ago   Up 2 seconds   0.0.0.0:3000->3000/tcp, [::]:3000->3000/tcp   my-web-terminal
+0a2e5c14ee31   ubuntu                                 "sleep infinity"          7 minutes ago   Up 7 minutes                                                 my_terminal
+```
+
+```
+$ docker logs my-web-terminal
+서버 오픈: http://localhost:3000
+```
+
+
