@@ -1,5 +1,22 @@
-
-## CI/CD 파이프라인 상세 설계 (Sub-directory 기반)
+---
+title: CI/CD 파이프라인 상세 설계 (Sub-directory 기반)
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Docker
+  - CI/CD
+  - github workflow
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ### 1. 개요 및 목적
 
