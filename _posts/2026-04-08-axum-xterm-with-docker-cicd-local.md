@@ -51,6 +51,8 @@ description: desc가 여기에
 
 ## 실습
 
+- https://github.com/fall20style/rust_prep/commit/e3f8af461f3790ee1442dc72e5e4597c0d1f5d0e
+
 ### act 설치하기
 ```
 ~/work/act_test$ curl -s https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
