@@ -92,9 +92,6 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ~/work/rust_prep$ docker login ghcr.io -u fall20style
 Password: 
 
-WARNING! Your credentials are stored unencrypted in '/home/mjpark/.docker/config.json'.
-Login Succeeded
-
 ~/work/rust_prep$ docker pull ghcr.io/fall20style/rust_prep:latest
 latest: Pulling from fall20style/rust_prep
 Digest: sha256:9bce0eda108c5e7491e9426f134d8f9cfc9604d5ab1035747cf91dfd31ac6c86
