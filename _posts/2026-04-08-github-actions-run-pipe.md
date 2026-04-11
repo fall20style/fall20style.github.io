@@ -1,5 +1,5 @@
 ---
-title: GitHub Actions - run: | 문법
+title: "GitHub Actions - run: | 문법"
 layout: single
 author_profile: true
 read_time: true
@@ -8,7 +8,7 @@ share: true
 related: true
 popular: true
 tags:
-  - GitHub Actions
+  - "GitHub Actions"
 categories:
 toc: true
 toc_sticky: true
