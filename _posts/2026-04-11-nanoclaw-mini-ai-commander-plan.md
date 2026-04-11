@@ -1,5 +1,5 @@
 ---
-title: "프로젝트 계획: NanoClaw-Clone (AI 샌드박스 오케스트레이터 구현)"
+title: "프로젝트 구상 NanoClaw-Clone (AI 샌드박스 오케스트레이터 구현)"
 layout: single
 author_profile: true
 read_time: true
@@ -11,7 +11,7 @@ tags:
   - NanoClaw
   - Docker
 categories:
-  - "습작만들기"
+  - 습작만들기
 toc: true
 toc_sticky: true
 toc_label: 목차
