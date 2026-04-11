@@ -7,6 +7,11 @@
     {% if site.data.ui-text[site.locale].follow_label %}
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
+    <li>
+      <a href="https://github.com{{ page.path }}" rel="nofollow noopener noreferrer">
+        <i class="fab fa-fw fa-github" aria-hidden="true"></i> Edit this page on GitHub
+      </a>
+    </li>
 
     {% if site.footer.links %}
       {% for link in site.footer.links %}
@@ -19,11 +24,6 @@
     {% unless site.atom_feed.hide %}
       <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
     {% endunless %}
-    <li>
-      <a href="https://github.com{{ page.path }}" rel="nofollow noopener noreferrer">
-        <i class="fab fa-fw fa-github" aria-hidden="true"></i> Edit this page on GitHub
-      </a>
-    </li>
   </ul>
 </div>
 {% endif %}
