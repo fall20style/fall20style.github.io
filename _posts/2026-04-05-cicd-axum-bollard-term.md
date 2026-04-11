@@ -12,6 +12,7 @@ tags:
   - CI/CD
   - github workflow
 categories:
+  - 습작만들기
 toc: true
 toc_sticky: true
 toc_label: 목차
