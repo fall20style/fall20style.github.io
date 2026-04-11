@@ -11,7 +11,7 @@ tags:
   - NanoClaw
   - Docker
 categories:
-  - 포트폴리오준비
+  - 습작만들기
 toc: true
 toc_sticky: true
 toc_label: 목차
