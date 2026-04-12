@@ -8,7 +8,7 @@
       <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
     {% endif %}
     <li>
-      <a href="https://github.com{{ page.path }}" rel="nofollow noopener noreferrer">
+      <a href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}">
         <i class="fab fa-fw fa-github" aria-hidden="true"></i> Edit this page on GitHub
       </a>
     </li>
@@ -16,7 +16,7 @@
     {% if site.footer.links %}
       {% for link in site.footer.links %}
         {% if link.label and link.url %}
-          <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label | escape_once | strip }}</a></li>
+    <li><a href="{{ link.url }}" rel="nofollow noopener noreferrer"><i class="{{ link.icon | default: 'fas fa-link' }}" aria-hidden="true"></i> {{ link.label | escape_once | strip }}</a></li>
         {% endif %}
       {% endfor %}
     {% endif %}
