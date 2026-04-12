@@ -140,3 +140,7 @@ client.login('복사한_토큰');
 * 원인: 봇 계정만 만들고 실제 서버로 초대(Invite)하지 않음.
 * 해결: OAuth2 -> URL Generator에서 bot 체크 후 생성된 링크를 브라우저에 입력하여 서버에 승인 절차를 거침.
 
+## 스크린샷
+<img width="811" height="883" alt="Image" src="https://github.com/user-attachments/assets/f398cb9e-a7e4-429e-9d63-e2d469312f91" />
+
+<img width="872" height="123" alt="Image" src="https://github.com/user-attachments/assets/dff0e866-aa9d-4eab-9c8d-d86c1ff49887" />
