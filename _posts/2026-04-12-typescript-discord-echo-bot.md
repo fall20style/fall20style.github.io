@@ -24,8 +24,6 @@ description: desc가 여기에
 
 ## 작업순서
 
-- https://github.com/fall20style/docker_prep/tree/main/discord_echo_bot
-
 ### 1. 디스코드 개발자 설정 (Portal)
 봇의 두뇌가 될 가상 계정을 생성하고 권한을 설정함.
 
