@@ -8,7 +8,9 @@ share: true
 related: true
 popular: true
 tags:
-  - n8n
+  - discord
+  - node.js
+  - typescript
 categories:
 toc: true
 toc_sticky: true
@@ -21,6 +23,8 @@ description: desc가 여기에
 ------------------------------
 
 ## 작업순서
+
+- https://github.com/fall20style/docker_prep/tree/main/discord_echo_bot
 
 ### 1. 디스코드 개발자 설정 (Portal)
 봇의 두뇌가 될 가상 계정을 생성하고 권한을 설정함.
@@ -144,3 +148,4 @@ client.login('복사한_토큰');
 <img width="811" height="883" alt="Image" src="https://github.com/user-attachments/assets/f398cb9e-a7e4-429e-9d63-e2d469312f91" />
 
 <img width="872" height="123" alt="Image" src="https://github.com/user-attachments/assets/dff0e866-aa9d-4eab-9c8d-d86c1ff49887" />
+
