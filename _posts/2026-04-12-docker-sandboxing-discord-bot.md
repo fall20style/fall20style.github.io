@@ -131,8 +131,12 @@ client.login(DISCORD_TOKEN);
 * 파일 감지: `fs.readdirSync`를 이용해 작업 전후 폴더 상태를 비교, 에이전트가 만든 결과물만 골라냄.
 
 
+## 스크린샷
+
+<img width="534" height="332" alt="Image" src="https://github.com/user-attachments/assets/d03f1132-6b45-4241-acb4-3f107cb0800a" />
+
+<img width="491" height="36" alt="Image" src="https://github.com/user-attachments/assets/ad1f5e50-27cd-47cd-833a-5d0a4a9e20d4" />
+
 ## 향후 할 일
 - 에이전트가 생성한 이미지나 PDF 파일을 채팅창에 직접 업로드하는 기능
-
-
 
