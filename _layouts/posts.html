@@ -26,5 +26,9 @@ layout: archive
       {% endfor %}
     </div>
     <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
+
+    <!-- Edit this page -->
+    <a href="{{ site.github.repository_url }}/edit/{{ site.github.source.branch }}/{{ page.path }}">
+    Edit this page on </a> 
   </section>
 {% endfor %}
