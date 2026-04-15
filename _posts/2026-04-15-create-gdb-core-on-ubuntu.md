@@ -131,3 +131,12 @@ To identify the cause of the crash, the following steps were taken:
     -   Confirmed `process_data` lacked a safety check before using the pointer.
 4. **Documentation**: Created `CRASH_REPORT.md` with the findings and a recommended fix.
 
+### AGENT.md 예제
+
+``` markdown
+## 요구사항
+
+1. crash가 발생하면, LLM을 이용해서 자동으로 crash를 분석하는 시스템을 만들고 싶어.
+
+2. 수정 patch를 만들어서 같은 dir에 넣어줘
+```
