@@ -52,7 +52,6 @@ Segmentation fault (core dumped)
 |/usr/share/apport/apport -p%p -s%s -c%c -d%d -P%P -u%u -g%g -F%F -- %E
 ```
 
-
 ### systemd-coredump tool 설치하고 crash 다시 발생
 
 
@@ -63,7 +62,7 @@ Segmentation fault (core dumped)
 Segmentation fault (core dumped)
 :~/work/test_gcc_llm$ coredumpctl list
 TIME                            PID   UID   GID SIG COREFILE  EXE
-Wed 2026-04-15 21:40:06 KST    8688  1000  1000  11 present   /home/mjpark/work/test_gcc_llm/target
+Wed 2026-04-15 21:40:06 KST    8688  1000  1000  11 present   /home/USER/work/test_gcc_llm/target
 
 ```
 - list로 확인 가능
@@ -74,29 +73,29 @@ Wed 2026-04-15 21:40:06 KST    8688  1000  1000  11 present   /home/mjpark/work/
 ``` bash
 :~/work/test_gcc_llm$ coredumpctl dump 8688 -o core
 PID: 8688 (target)
-UID: 1000 (mjpark)
-GID: 1000 (mjpark)
+UID: 1000 (USER)
+GID: 1000 (USER)
 Signal: 11 (SEGV)
 Timestamp: Wed 2026-04-15 21:40:06 KST (30s ago)
 Command Line: ./target
-Executable: /home/mjpark/work/test_gcc_llm/target
+Executable: /home/USER/work/test_gcc_llm/target
 Control Group: /user.slice/user-1000.slice/user@1000.service/apps.slice/apps-org.gnome.Terminal.slice/vte-spawn-bc27d699-1313-45ea-840d-86d75ffb0a41.scope
 Unit: user@1000.service
 User Unit: vte-spawn-bc27d699-1313-45ea-840d-86d75ffb0a41.scope
 Slice: user-1000.slice
-Owner UID: 1000 (mjpark)
+Owner UID: 1000 (USER)
 Boot ID: d5522e9eae7f4309b9f7e06d7f95696d
 Machine ID: 37db5d41042948389ea9db875b5c83f8
-Hostname: mjpark-Samsung-Desktop-System
+Hostname: USER-Samsung-Desktop-System
 Storage: /var/lib/systemd/coredump/core.target.1000.d5522e9eae7f4309b9f7e06d7f95696d.8688.1776256806000000000000.lz4
 Message: Process 8688 (target) of user 1000 dumped core.
 
 Stack trace of thread 8688:
 #0  0x00007fd592c13bea __GI___strlen_sse2 (libc.so.6 + 0xb1bea)
-#1  0x000055a1b8a2e185 n/a (/home/mjpark/work/test_gcc_llm/target + 0x1185)
-#2  0x000055a1b8a2e1c1 n/a (/home/mjpark/work/test_gcc_llm/target + 0x11c1)
+#1  0x000055a1b8a2e185 n/a (/home/USER/work/test_gcc_llm/target + 0x1185)
+#2  0x000055a1b8a2e1c1 n/a (/home/USER/work/test_gcc_llm/target + 0x11c1)
 #3  0x00007fd592b86083 __libc_start_main (libc.so.6 + 0x24083)
-#4  0x000055a1b8a2e0ae n/a (/home/mjpark/work/test_gcc_llm/target + 0x10ae)
+#4  0x000055a1b8a2e0ae n/a (/home/USER/work/test_gcc_llm/target + 0x10ae)
 ```
 
 
