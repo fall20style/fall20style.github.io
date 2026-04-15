@@ -34,18 +34,20 @@ description: desc가 여기에
 
 ### ① 스키마 정의 (user.proto)
 
+```
 syntax = "proto3";
 message User {
   int32 id = 1;
   string name = 2;
   string email = 3;
 }
+```
 
 ### ② 자동 생성된 C++ 활용
 
-* 데이터 구조: User 클래스가 생성되어 set_name(), name() 등의 메서드 제공함.
-* 직렬화(Serialization): SerializeToString() 등을 통해 바이너리나 JSON으로 즉시 변환 가능함.
-* 일관성: 스키마에서 필드 타입을 바꾸면 컴파일 타임에 모든 관련 로직에서 에러가 발생하여 동기화를 강제함.
+- 데이터 구조: User 클래스가 생성되어 set_name(), name() 등의 메서드 제공함.
+- 직렬화(Serialization): SerializeToString() 등을 통해 바이너리나 JSON으로 즉시 변환 가능함.
+- 일관성: 스키마에서 필드 타입을 바꾸면 컴파일 타임에 모든 관련 로직에서 에러가 발생하여 동기화를 강제함.
 
 ## 4. SSOT 도입 시 장점 (C/C++ 기준)
 
@@ -58,5 +60,5 @@ message User {
 
 ## 5. 요약 및 결론
 
-* C/C++ 프로젝트에서 Protobuf는 단순한 직렬화 도구를 넘어, 시스템 전체의 데이터 규격을 정의하는 중심점 역할을 함.
-* Single Source of Truth를 실현함으로써 대규모 프로젝트의 유지보수 비용을 획기적으로 줄이고, 데이터 불일치로 인한 런타임 버그를 예방할 수 있음.
+- C/C++ 프로젝트에서 Protobuf는 단순한 직렬화 도구를 넘어, 시스템 전체의 데이터 규격을 정의하는 중심점 역할을 함.
+- Single Source of Truth를 실현함으로써 대규모 프로젝트의 유지보수 비용을 획기적으로 줄이고, 데이터 불일치로 인한 런타임 버그를 예방할 수 있음.
