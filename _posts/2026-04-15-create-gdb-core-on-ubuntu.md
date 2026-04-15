@@ -140,3 +140,7 @@ To identify the cause of the crash, the following steps were taken:
 
 2. 수정 patch를 만들어서 같은 dir에 넣어줘
 ```
+
+
+## 작업 기록
+- [test_gcc_llm.zip](https://github.com/user-attachments/files/26751235/test_gcc_llm.zip)
