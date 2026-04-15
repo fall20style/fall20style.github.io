@@ -1,5 +1,5 @@
 ---
-title: gdb로 coredump를 생성하고 bt full text로 얻기
+title: gdb로 coredump를 생성하고 gemini CLI로 디버깅
 layout: single
 author_profile: true
 read_time: true
@@ -19,6 +19,7 @@ description: desc가 여기에
 - 마지막에 gemini CLI로 분석함
 
 ### Crash가 발생하는 코드 작성
+
 ``` c
 #include <stdio.h>
 #include <string.h>
@@ -54,8 +55,7 @@ Segmentation fault (core dumped)
 
 ### systemd-coredump tool 설치하고 crash 다시 발생
 
-
-```
+``` bash
 :~/work/test_gcc_llm$ sudo apt install systemd-coredump
 :~/work/test_gcc_llm$ coredumpctl list
 :~/work/test_gcc_llm$ ./target
