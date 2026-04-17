@@ -1,8 +1,23 @@
+---
+title: systemd-coredump 요약
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - coredumpctl
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 
-systemd-coredump 요약
-
-## 🛠️ 주요 기능
+## 주요 기능
 
 * 자동 수집: 프로그램 크래시 시 메모리 상태 자동 저장함.
 * 데이터 압축: lz4 등으로 압축해서 용량 아낌.
@@ -10,15 +25,39 @@ systemd-coredump 요약
 * 로그 통합: journalctl이랑 연동돼서 확인 편함.
 
 
-## 📂 저장 및 관리
+## 저장 및 관리
 
-* 저장소: /var/lib/systemd/coredump/에 보관함.
-* 설정: /etc/systemd/coredump.conf에서 용량 조절 가능함.
+* 저장소: `/var/lib/systemd/coredump/`에 보관함.
+* 설정: `/etc/systemd/coredump.conf`에서 용량 조절 가능함.
 * 도구: coredumpctl 명령어로 관리함.
 
 
-## 💡 주요 명령어
+## 주요 명령어
 
-* coredumpctl list: 전체 덤프 목록 보여줌.
-* coredumpctl info [PID]: 상세 정보 확인용임.
-* coredumpctl gdb [PID]: 바로 디버깅.
+* `coredumpctl list`: 전체 덤프 목록 보여줌.
+* `coredumpctl info` [PID]: 상세 정보 확인용임.
+* `coredumpctl gdb [PID]`: 바로 디버깅.
+
+
+## 코어 파일 저장
+
+* 최근 덤프 추출
+`coredumpctl dump -o core.file`
+* PID 지정 저장
+`coredumpctl dump [PID] -o filename`
+* 실행 파일명 기준
+`coredumpctl dump [NAME] -o filename`
+
+## 디버깅 및 설정
+
+* GDB 바로 연결...
+`coredumpctl debug [PID]`
+
+* 기본 저장 경로...
+`/var/lib/systemd/coredump/`
+
+* 설정 파일...
+`/etc/systemd/coredump.conf`
+
+* 파일 안 보이면... `ulimit -c` 확인...
+

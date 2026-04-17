@@ -18,7 +18,7 @@ description: desc가 여기에
 ---
 
 
-## 🛠️ Dockerfile 작성...
+## Dockerfile 작성
 
 - 베이스 이미지... 노드 사용...FROM node:20-slim
 - CLI 설치...RUN npm install -g @google/gemini-cli
@@ -26,7 +26,7 @@ description: desc가 여기에
 - 기본 명령...ENTRYPOINT ["gemini"]
 
 
-## 🚀 빌드 및 실행...
+## 빌드 및 실행
 
    1. 이미지 만들기...
    * docker build -t gemini-cli .
@@ -35,7 +35,7 @@ description: desc가 여기에
       * docker run -it -e GEMINI_API_KEY="본인_키" gemini-cli
    
 
-## 💡 참고할 점...
+## 참고할 점
 
 * API 키... 여기서 발급...
 * 파일 연결... 로컬 파일 보려면 -v $(pwd):/app 옵션 추가...
