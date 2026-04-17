@@ -47,6 +47,24 @@ cat bt.txt | gemini "이 로그에서 세그멘테이션 폴트가 발생한 코
 cat bt.txt | gemini "이 로그에서 세그멘테이션 폴트가 발생한 코드 지점을 찾아줘..." > result.txt
 ```
 
+### 표준에러를 버리고 실행
+```
+cat bt.txt | gemini "이 로그에서 세그멘테이션 폴트가 발생한 코드 지점을 찾아줘..." 2>/dev/null > result2.txt
+```
+
+### 표준에러를 버리고 실행, 120초가 지나면 Timeout
+```
+cat bt.txt | timeout 120s gemini "이 로그에서 세그멘테이션 폴트가 발생한 코드 지점을 찾아줘..." 2>/dev/null > result.txt
+```
+
+### 표준에러를 버리고 실행, 120초가 지나면 Timeout error.log출력
+
+```
+cat bt.txt | timeout 120s gemini "분석 요청..." 2>/dev/null > result.txt || [ $? -eq 124 ] && echo "오류: 2분 초과로 중단됨..." >> error.log
+```
+
+
+
 #### result.txt 내용
 - 마크다운 형태로 출력됨
 - 같은 dir의 다른 파일을 읽고 분석을 한 것 같다. 
