@@ -1,5 +1,23 @@
+---
+title: Gemini를 포함하는 Dockerfile
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Gemini CLI
+  - Docker
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
-------------------------------
+
 ## 🛠️ Dockerfile 작성...
 
 - 베이스 이미지... 노드 사용...FROM node:20-slim
@@ -7,7 +25,7 @@
 - 실행 경로...WORKDIR /app
 - 기본 명령...ENTRYPOINT ["gemini"]
 
-------------------------------
+
 ## 🚀 빌드 및 실행...
 
    1. 이미지 만들기...
@@ -16,12 +34,12 @@
    * API 키가 꼭 필요함...
       * docker run -it -e GEMINI_API_KEY="본인_키" gemini-cli
    
-------------------------------
+
 ## 💡 참고할 점...
 
 * API 키... 여기서 발급...
 * 파일 연결... 로컬 파일 보려면 -v $(pwd):/app 옵션 추가...
 * 설정 저장... 컨테이너 끄면 설정 사라짐... 볼륨 마운트 추천...
 
-------------------------------
+
 

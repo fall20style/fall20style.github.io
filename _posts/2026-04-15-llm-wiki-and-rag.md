@@ -1,3 +1,22 @@
+---
+title: LLM위키와 RAG의 차이점
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - LLM wiki
+  - RAG
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 
 ## 1. 핵심 개념: '지식의 컴파일'
 

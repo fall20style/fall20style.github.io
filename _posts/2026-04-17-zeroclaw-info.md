@@ -1,3 +1,23 @@
+---
+title: ZeroClaw 정보
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Rust
+  - ZeroClaw
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
+
 ## ZeroClaw 핵심 요약
 ------------------------------
 ## 개요 및 특징
@@ -36,6 +56,7 @@
 
 ## 별도의 런타임이 필요 없음
 Java나 Python, Node.js 같은 언어들과 Rust의 결정적인 차이점임.
+
 ## 런타임이 필요 없는 이유
 
 * 네이티브 컴파일: Rust는 소스 코드를 기계어(Machine Code)로 직접 번역함.

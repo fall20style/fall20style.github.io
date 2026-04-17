@@ -26,6 +26,7 @@ description: desc가 여기에
 * 상태 관리: Redux (터미널의 설정이나 탭 상태 등을 관리함)
 
 ## 2. 프로세스 구조 (Electron 방식)
+
 Hyper는 크게 두 가지 프로세스로 나뉘어 돌아감.
 
 - Main Process (백엔드): Node.js 환경임. 창을 띄우고, 운영체제의 실제 셸(bash, zsh, powershell 등)과 통신하며, 플러그인을 로드함.
