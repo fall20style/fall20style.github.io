@@ -41,3 +41,18 @@ description: desc가 여기에
 * 병목 현상 방지: 연산이 집약적인 작업은 Docker(별도 프로세스)로 분리하고, 메인 로직은 I/O 제어에만 집중.
 
 
+
+
+## Related Posts
+- [gemini CLI를 특정 시간에 실행]({% link _posts/2026-04-04-geminiCLI-run-on-schedule.md %})
+- [NanoClaw의 결과 반환 구조 연습]({% link _posts/2026-04-11-nanoclaw-docker-sandboxing-test.md %})
+- ["프로젝트 구상 NanoClaw-Clone (AI 샌드박스 오케스트레이터 구현)"]({% link _posts/2026-04-11-nanoclaw-mini-ai-commander-plan.md %})
+- [node.js 입력 대기 → 자식 프로세스 생성 → Docker 격리 실행]({% link _posts/2026-04-11-nanoclaw-nodejs-child_process-poc.md %})
+- [nanoClaw에서 사용하는 node.js 기능]({% link _posts/2026-04-11-nanoclaw-nodejs-functions.md %})
+- [Gemini CLI Docker 실행 가이드]({% link _posts/2026-04-16-run-gemini-cli-on-docker.md %})
+- [Gemini CLI로 gdb bt 결과를 분석하기]({% link _posts/2026-04-17-gemini-cli-analyze-gdb-bt.md %})
+- [Gemini를 포함하는 Dockerfile]({% link _posts/2026-04-17-gemini-cli-dockerfile.md %})
+- [ZeroClaw 정보]({% link _posts/2026-04-17-zeroclaw-info.md %})
+- [discord bot에서 gemini bot으로 동작하기]({% link _posts/2026-04-18-claw-poc-run-gemini-on-docker.md %})
+- [Docker로 Gemini CLI 돌리는 법]({% link _posts/2026-04-18-how-to-run-gemini-on-docker.md %})
+- [Hyper는 프론트엔드 기술로 데스크톱 앱을 만드는 Electron 프레임워크]({% link _posts/2026-04-12-typescript-hyper-project.md %})

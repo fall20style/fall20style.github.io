@@ -51,3 +51,7 @@ C:\Users\fall2\AppData\Roaming\.emacs.d\init.el
 (set-fontset-font "fontset-default" 'hangul (font-spec :family "NanumGothicCoding" :size 16)) ; 한글 폰트
 #+end_src
 ```
+
+## Related Posts
+- [Linux용 Emacs 설치 환경설정]({% link _posts/2026-03-29-emacs-config-on-ubuntu.md %})
+- [Orgmode 사용하는 기능 노트]({% link _posts/2026-03-04-orgmod-note.md %})

@@ -147,3 +147,7 @@ client.login('복사한_토큰');
 
 <img width="872" height="123" alt="Image" src="https://github.com/user-attachments/assets/dff0e866-aa9d-4eab-9c8d-d86c1ff49887" />
 
+
+## Related Posts
+- [Docker sandbox 실행 + Discord Bot 통합]({% link _posts/2026-04-12-docker-sandboxing-discord-bot.md %})
+- [Hyper는 프론트엔드 기술로 데스크톱 앱을 만드는 Electron 프레임워크]({% link _posts/2026-04-12-typescript-hyper-project.md %})

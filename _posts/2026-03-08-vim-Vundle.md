@@ -31,3 +31,7 @@ vi 켜고 다음 명령을 입력하기
 ```
 :PluginUpdate
 ```
+
+## Related Posts
+- [Vim 설정 - 우분투]({% link _posts/2026-03-02-vimrc.md %})
+- [tmux 설정 - 우분투 & WSL]({% link _posts/2026-03-02-tmux-conf.md %})

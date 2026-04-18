@@ -191,3 +191,10 @@ int main() {
 * 주체(App): "나는 send 기능이 필요해!"
 * 주입자(main): "자, 여기 Real 혹은 Mock 객체야. 이걸 써!"
 * 결과: App은 내부 로직 수정 없이 상황에 맞는 객체를 사용하게 됨.
+
+## Related Posts
+- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
+- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

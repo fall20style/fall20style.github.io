@@ -49,4 +49,11 @@ description: desc가 여기에
    2. 이름 중복 주의: 동일 이름으로 다시 실행하려면 기존 컨테이너를 먼저 삭제(podman rm -f my-web)해야 함.
    3. 포트 충돌: my-web2 실행 시 8080 포트가 점유 중이면 -p 8081:80처럼 포트 번호를 바꿔야 함.
 
+## Related Posts
+- [Docker Nginx 실습]({% link _posts/2026-03-29-nginx-run-on-docker.md %})
+- [Podman 설치 (Ubuntu 20.04)]({% link _posts/2026-03-29-podman-on-ubuntu2204.md %})
+- [docker의 container image 미사용 한번에 지우기]({% link _posts/2026-04-08-docker-remove-img-container-at-once.md %})
+- [Podman 기본 명령어]({% link _posts/2026-04-08-podman-command-list.md %})
+- [1개를 제외한 모든 docker image 삭제하기]({% link _posts/2026-04-18-remove-all-docker-img-except-one.md %})
+
 

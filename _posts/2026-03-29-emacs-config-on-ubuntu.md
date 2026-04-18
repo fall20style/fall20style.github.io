@@ -115,3 +115,7 @@ font fontset
  ;; If there is more than one, they won't work right.
  )
 ```
+
+## Related Posts
+- [Windows용 Emacs 설치 환경설정]({% link _posts/2026-02-28-emacs-windows-setup.md %})
+- [Orgmode 사용하는 기능 노트]({% link _posts/2026-03-04-orgmod-note.md %})

@@ -66,3 +66,10 @@ int main() {
 * Verification (Verify): 예상한 대로 함수가 호출되었는지 사후 검증함.
 * Matchers (Using): 특정 인자값이나 Any 같은 조건으로 호출을 제한할 수 있음.
 * Spying: 실제 객체의 동작을 유지하면서 호출 기록만 추적하는 것도 가능.
+
+## Related Posts
+- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
+- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

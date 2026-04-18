@@ -47,3 +47,8 @@ Squash는 주로 `git rebase -i`(인터랙티브 모드)를 사용함.
 * 히스토리 변경: Squash도 Rebase의 일종이라 커밋 해시가 새로 생성됨.
 * 강제 푸시: 이미 원격에 올렸던 커밋들이라면 `git push -f`가 필요함.
 
+
+## Related Posts
+- [git rebase와 merging의 차이]({% link _posts/2026-04-01-git-rebase-and-merging.md %})
+- [원본 저장소에서 Fork 없이 바로 PR을 만드는 방법]({% link _posts/2026-04-07-creat-pr-on-org-repo.md %})
+- [github에 comment를 가져오기]({% link _posts/2026-04-02-github-comment-query.md %})

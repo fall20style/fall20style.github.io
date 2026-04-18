@@ -25,3 +25,7 @@ TODO
 - https://doc.norang.ca/org-mode.html
 
 
+
+## Related Posts
+- [Windows용 Emacs 설치 환경설정]({% link _posts/2026-02-28-emacs-windows-setup.md %})
+- [Linux용 Emacs 설치 환경설정]({% link _posts/2026-03-29-emacs-config-on-ubuntu.md %})

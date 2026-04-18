@@ -96,3 +96,7 @@ HTTP/2 멀티플렉싱과 gRPC(Protobuf) 조합이 네트워크 지연 시간(La
 ### 결론
 네트워크 지연 시간이 Critical(치명적)인 실시간 게임, 금융 거래, 대규모 MSA 환경에서는 gRPC 도입만으로도 인프라 비용 절감과 응답 속도 개선이라는 두 마리 토끼를 잡을 수 있음.
 
+
+## Related Posts
+- [Protobuf, protoc와 gRPC의 관계]({% link _posts/2026-03-30-protobuf-and-gRPC.md %})
+- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

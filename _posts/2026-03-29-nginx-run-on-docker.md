@@ -96,3 +96,10 @@ docker exec -it my-nginx2 /bin/bash
    * -it (interactive + tty) 옵션으로 컨테이너 내부와 상호작용 가능한 터미널 환경을 만듦.
    * 접속 후 cd /usr/share/nginx/html 등으로 이동해 내부 파일을 직접 확인 가능함.
    * exit를 입력하면 컨테이너에서 빠져나오지만, 컨테이너는 종료되지 않고 계속 실행됨.
+
+## Related Posts
+- [Podman Nginx 실습]({% link _posts/2026-03-29-podman-nginx-ubuntu20.04.md %})
+- [Podman 설치 (Ubuntu 20.04)]({% link _posts/2026-03-29-podman-on-ubuntu2204.md %})
+- [docker의 container image 미사용 한번에 지우기]({% link _posts/2026-04-08-docker-remove-img-container-at-once.md %})
+- [Podman 기본 명령어]({% link _posts/2026-04-08-podman-command-list.md %})
+- [1개를 제외한 모든 docker image 삭제하기]({% link _posts/2026-04-18-remove-all-docker-img-except-one.md %})

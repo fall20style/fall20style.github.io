@@ -140,3 +140,7 @@
 
 ## 위치
 - https://github.com/fall20style/rust_prep/tree/main/04_gemini_harness_calc_api
+
+## Related Posts
+- [MCP Inspector와 MCP hello world 예제 테스트]({% link _posts/2026-03-29-mcp-hello-world-test-with-inspector.md %})
+- [LLM위키와 RAG의 차이점]({% link _posts/2026-04-15-llm-wiki-and-rag.md %})

@@ -100,5 +100,17 @@ Digest: sha256:9bce0eda108c5e7491e9426f134d8f9cfc9604d5ab1035747cf91dfd31ac6c86
 Status: Image is up to date for ghcr.io/fall20style/rust_prep:latest
 ghcr.io/fall20style/rust_prep:latest
 
+## Related Posts
+- [axum으로 GET/POST 예제]({% link _posts/2026-04-03-axum_get_post.md %})
+- [package axum-core v0.5.6 cannot be built]({% link _posts/2026-04-03-cargo-run-error.md %})
+- [static web page server]({% link _posts/2026-04-03-rust-static-web-server.md %})
+- [Rust Axum으로 Unit Test하고 실행]({% link _posts/2026-04-04-rust-calc-rest-api-unittest.md %})
+- [Axum과 WebSockets를 이용한 터미널 에뮬레이션]({% link _posts/2026-04-04-simple-terminal-emulation-axum.md %})
+- [Axum로 터미널 에뮬레이션 - Docker 연결]({% link _posts/2026-04-04-terminal-emul-axum-docker.md %})
+- [Axum-Docker 웹 터미널 최종 가이드]({% link _posts/2026-04-05-axum-xterm-with-docker-cicd-debug.md %})
+- [Axum-Docker docker 명령어 정리와 run.sh]({% link _posts/2026-04-05-axum-xterm-with-docker-cmd-list.md %})
+- [Axum-xterm.js 기반 Docker Web Terminal]({% link _posts/2026-04-05-axum-xterm-with-docker.md %})
+- [CI/CD 파이프라인 상세 설계 (Sub-directory 기반)]({% link _posts/2026-04-05-cicd-axum-bollard-term.md %})
+
 ```
 

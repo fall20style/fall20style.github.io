@@ -46,3 +46,8 @@ gh api repos/:owner/:repo/issues/<PR번호>/comments --jq '.[].body'
 
 * 파일 저장: 뒤에 `> result.txt` 붙여서 저장하면 됨.
 * 체크 결과: 댓글 말고 'Checks' 탭에 있으면 `gh pr checks <PR번호>` 쓰면 됨.
+
+## Related Posts
+- [git 여러 commit 합치기]({% link _posts/2026-04-01-git-merging-commits-into-one.md %})
+- [git rebase와 merging의 차이]({% link _posts/2026-04-01-git-rebase-and-merging.md %})
+- [원본 저장소에서 Fork 없이 바로 PR을 만드는 방법]({% link _posts/2026-04-07-creat-pr-on-org-repo.md %})

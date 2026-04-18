@@ -88,3 +88,19 @@ I will start by examining the source code in `overflow.c` and checking the `bt.t
 
 `CRASH_REPORT.md`의 콜 스택에서도 `__stack_chk_fail`이 호출된 후 `vulnerable_function`에서 멈춘 것을 확인할 수 있습니다. 이를 해결하려면 `strcpy` 대신 `strncpy`를 사용하거나 버퍼 크기를 체크하는 로직을 추가해야 합니다.
 ```
+
+## Related Posts
+- [gdb로 coredump를 생성하고 gemini CLI로 디버깅]({% link _posts/2026-04-15-create-gdb-core-on-ubuntu.md %})
+- [systemd-coredump 요약]({% link _posts/2026-04-16-systemctrl-coredump-ctrl-usage.md %})
+- [Superpowers와 Gstack]({% link _posts/2026-04-01-gstack-and-superpowers.md %})
+- [gemini CLI를 특정 시간에 실행]({% link _posts/2026-04-04-geminiCLI-run-on-schedule.md %})
+- [NanoClaw의 결과 반환 구조 연습]({% link _posts/2026-04-11-nanoclaw-docker-sandboxing-test.md %})
+- ["프로젝트 구상 NanoClaw-Clone (AI 샌드박스 오케스트레이터 구현)"]({% link _posts/2026-04-11-nanoclaw-mini-ai-commander-plan.md %})
+- [node.js 입력 대기 → 자식 프로세스 생성 → Docker 격리 실행]({% link _posts/2026-04-11-nanoclaw-nodejs-child_process-poc.md %})
+- [nanoClaw에서 사용하는 node.js 기능]({% link _posts/2026-04-11-nanoclaw-nodejs-functions.md %})
+- [JavaScript/TypeScript의 논블로킹 I/O 모델과 NanoClaw에서의 사용]({% link _posts/2026-04-11-nanoclaw-nonblocking-io-typescript.md %})
+- [Gemini CLI Docker 실행 가이드]({% link _posts/2026-04-16-run-gemini-cli-on-docker.md %})
+- [Gemini를 포함하는 Dockerfile]({% link _posts/2026-04-17-gemini-cli-dockerfile.md %})
+- [ZeroClaw 정보]({% link _posts/2026-04-17-zeroclaw-info.md %})
+- [discord bot에서 gemini bot으로 동작하기]({% link _posts/2026-04-18-claw-poc-run-gemini-on-docker.md %})
+- [Docker로 Gemini CLI 돌리는 법]({% link _posts/2026-04-18-how-to-run-gemini-on-docker.md %})

@@ -128,3 +128,10 @@ podman rm my-web
 podman run -d --name my-web --rm -p 8080:80 docker.io/library/nginx:latest
 ```
 
+## Related Posts
+- [Docker Nginx 실습]({% link _posts/2026-03-29-nginx-run-on-docker.md %})
+- [Podman Nginx 실습]({% link _posts/2026-03-29-podman-nginx-ubuntu20.04.md %})
+- [Podman 설치 (Ubuntu 20.04)]({% link _posts/2026-03-29-podman-on-ubuntu2204.md %})
+- [docker의 container image 미사용 한번에 지우기]({% link _posts/2026-04-08-docker-remove-img-container-at-once.md %})
+- [1개를 제외한 모든 docker image 삭제하기]({% link _posts/2026-04-18-remove-all-docker-img-except-one.md %})
+

@@ -61,3 +61,8 @@ git push origin [새_브랜치_이름]
 | 저장소 | 내 계정으로 복사된 곳 | 원본 저장소 그 자체 |
 | 권한 | 누구나 가능 | 쓰기 권한 필수 |
 | 용도 | 오픈 소스 기여 시 | 팀 프로젝트 협업 시 |
+
+## Related Posts
+- [git 여러 commit 합치기]({% link _posts/2026-04-01-git-merging-commits-into-one.md %})
+- [git rebase와 merging의 차이]({% link _posts/2026-04-01-git-rebase-and-merging.md %})
+- [github에 comment를 가져오기]({% link _posts/2026-04-02-github-comment-query.md %})

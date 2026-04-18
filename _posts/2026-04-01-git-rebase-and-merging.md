@@ -42,3 +42,8 @@ description: desc가 여기에
    3. (충돌 나면 수정 후) git add . -> git rebase --continue
    4. git push -f (히스토리가 바뀌었으므로 강제 푸시 필요함)
 
+
+## Related Posts
+- [git 여러 commit 합치기]({% link _posts/2026-04-01-git-merging-commits-into-one.md %})
+- [원본 저장소에서 Fork 없이 바로 PR을 만드는 방법]({% link _posts/2026-04-07-creat-pr-on-org-repo.md %})
+- [github에 comment를 가져오기]({% link _posts/2026-04-02-github-comment-query.md %})

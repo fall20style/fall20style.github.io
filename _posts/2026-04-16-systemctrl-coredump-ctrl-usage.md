@@ -61,3 +61,8 @@ description: desc가 여기에
 
 * 파일 안 보이면... `ulimit -c` 확인...
 
+
+## Related Posts
+- [gdb로 coredump를 생성하고 gemini CLI로 디버깅]({% link _posts/2026-04-15-create-gdb-core-on-ubuntu.md %})
+- [Gemini CLI로 gdb bt 결과를 분석하기]({% link _posts/2026-04-17-gemini-cli-analyze-gdb-bt.md %})
+- [Superpowers와 Gstack]({% link _posts/2026-04-01-gstack-and-superpowers.md %})

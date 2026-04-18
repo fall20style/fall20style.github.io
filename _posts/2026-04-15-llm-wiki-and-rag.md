@@ -100,3 +100,7 @@ LLM이 원본을 읽고 스스로 컴파일한 결과물임.
 이렇게 하면 LLM이 알아서 파일을 열고, 내용을 요약해서 마크다운으로 '컴파일'함.
 Obsidian(옵시디언) 앱으로 이 폴더를 열면 모든 문서가 시각적으로 연결되어 보임. 바로 폴더 세팅 시작해볼 거임?
 
+
+## Related Posts
+- [MCP Inspector와 MCP hello world 예제 테스트]({% link _posts/2026-03-29-mcp-hello-world-test-with-inspector.md %})
+- [Anthropic의 하네스(Harness) 구조 분석]({% link _posts/2026-04-04-anthropic-harness-study.md %})

@@ -82,3 +82,7 @@ Hyper가 작게 유지될 수 있는 이유는 무거운 작업을 외부 라이
 ## 결론
 - Hyper는 "가볍고 확장 가능한 껍데기"를 만드는 데 집중한 프로젝트.
 - TypeScript로 작성된 React 컴포넌트와 Redux 상태 관리의 정석을 보기 좋음.
+
+## Related Posts
+- [Discord Echo 봇 환경 구축 및 실행]({% link _posts/2026-04-12-typescript-discord-echo-bot.md %})
+- [JavaScript/TypeScript의 논블로킹 I/O 모델과 NanoClaw에서의 사용]({% link _posts/2026-04-11-nanoclaw-nonblocking-io-typescript.md %})

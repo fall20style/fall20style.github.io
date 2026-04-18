@@ -52,3 +52,7 @@ npx @modelcontextprotocol/inspector python server.py
 * 주도권: 클라이언트(Inspector/Claude)가 항상 먼저 요청을 보내는 Request-Response 구조.
 * 상태: 서버는 기본적으로 수동적이며, 클라이언트의 요청이 올 때까지 표준 입력(stdin)을 대기(Listening).
 
+
+## Related Posts
+- [Anthropic의 하네스(Harness) 구조 분석]({% link _posts/2026-04-04-anthropic-harness-study.md %})
+- [LLM위키와 RAG의 차이점]({% link _posts/2026-04-15-llm-wiki-and-rag.md %})

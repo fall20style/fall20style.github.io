@@ -140,3 +140,6 @@ client.login(DISCORD_TOKEN);
 ## 향후 할 일
 - 에이전트가 생성한 이미지나 PDF 파일을 채팅창에 직접 업로드하는 기능
 
+
+## Related Posts
+- [Discord Echo 봇 환경 구축 및 실행]({% link _posts/2026-04-12-typescript-discord-echo-bot.md %})

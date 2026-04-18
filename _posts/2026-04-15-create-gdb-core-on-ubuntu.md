@@ -144,3 +144,8 @@ To identify the cause of the crash, the following steps were taken:
 
 ## 작업 기록
 - [test_gcc_llm.zip](https://github.com/user-attachments/files/26751235/test_gcc_llm.zip)
+
+## Related Posts
+- [systemd-coredump 요약]({% link _posts/2026-04-16-systemctrl-coredump-ctrl-usage.md %})
+- [Gemini CLI로 gdb bt 결과를 분석하기]({% link _posts/2026-04-17-gemini-cli-analyze-gdb-bt.md %})
+- [Superpowers와 Gstack]({% link _posts/2026-04-01-gstack-and-superpowers.md %})

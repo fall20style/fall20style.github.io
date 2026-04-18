@@ -110,3 +110,10 @@ Total reclaimed space: 1.71GB
 REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
 ```
 
+## Related Posts
+- [Docker Nginx 실습]({% link _posts/2026-03-29-nginx-run-on-docker.md %})
+- [Podman Nginx 실습]({% link _posts/2026-03-29-podman-nginx-ubuntu20.04.md %})
+- [Podman 설치 (Ubuntu 20.04)]({% link _posts/2026-03-29-podman-on-ubuntu2204.md %})
+- [Podman 기본 명령어]({% link _posts/2026-04-08-podman-command-list.md %})
+- [1개를 제외한 모든 docker image 삭제하기]({% link _posts/2026-04-18-remove-all-docker-img-except-one.md %})
+

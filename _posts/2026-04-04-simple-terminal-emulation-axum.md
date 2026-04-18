@@ -65,3 +65,15 @@ Rust의 Axum 프레임워크와 WebSockets, 그리고 xterm.js를 사용하여 �
 
 ## 작업 경로
 - https://github.com/fall20style/rust_prep/tree/main/05_gemini_harness_axum_bash_cli
+
+## Related Posts
+- [axum으로 GET/POST 예제]({% link _posts/2026-04-03-axum_get_post.md %})
+- [package axum-core v0.5.6 cannot be built]({% link _posts/2026-04-03-cargo-run-error.md %})
+- [static web page server]({% link _posts/2026-04-03-rust-static-web-server.md %})
+- [Rust Axum으로 Unit Test하고 실행]({% link _posts/2026-04-04-rust-calc-rest-api-unittest.md %})
+- [Axum로 터미널 에뮬레이션 - Docker 연결]({% link _posts/2026-04-04-terminal-emul-axum-docker.md %})
+- [Axum-Docker 웹 터미널 최종 가이드]({% link _posts/2026-04-05-axum-xterm-with-docker-cicd-debug.md %})
+- [Axum-Docker docker 명령어 정리와 run.sh]({% link _posts/2026-04-05-axum-xterm-with-docker-cmd-list.md %})
+- [Axum-xterm.js 기반 Docker Web Terminal]({% link _posts/2026-04-05-axum-xterm-with-docker.md %})
+- [CI/CD 파이프라인 상세 설계 (Sub-directory 기반)]({% link _posts/2026-04-05-cicd-axum-bollard-term.md %})
+- [GitHub Actions 로컬 실행(act) 및 Rust 프로젝트 CI/CD 정리]({% link _posts/2026-04-08-axum-xterm-with-docker-cicd-local.md %})

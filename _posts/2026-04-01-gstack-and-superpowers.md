@@ -36,3 +36,8 @@ Claude Code(CC) 기능을 확장해 주는 오픈소스.
 * Gstack: 프로젝트 전체를 맡길 '전문가 에이전트'가 필요할 때 씀.
 * Superpowers: 코딩 과정에서 구체적인 '추가 기능'이 필요할 때 씀.
 
+
+## Related Posts
+- [gdb로 coredump를 생성하고 gemini CLI로 디버깅]({% link _posts/2026-04-15-create-gdb-core-on-ubuntu.md %})
+- [systemd-coredump 요약]({% link _posts/2026-04-16-systemctrl-coredump-ctrl-usage.md %})
+- [Gemini CLI로 gdb bt 결과를 분석하기]({% link _posts/2026-04-17-gemini-cli-analyze-gdb-bt.md %})

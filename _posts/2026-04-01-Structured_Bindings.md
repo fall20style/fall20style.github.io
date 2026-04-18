@@ -55,3 +55,10 @@ auto [px, py] = p; // px = 10, py = 20
 * `p.first, get<0>(t)` 처럼 복잡하게 안 써도 됨.
 * 변수 이름을 직관적으로 지을 수 있어서 코드가 읽기 편해짐.
 * const auto& [a, b] 처럼 써서 복사 비용도 아낄 수 있음.
+
+## Related Posts
+- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
+- [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
+- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})
