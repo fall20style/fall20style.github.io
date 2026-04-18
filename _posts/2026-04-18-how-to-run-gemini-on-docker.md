@@ -50,3 +50,6 @@ description: desc가 여기에
 * 설정 저장: -v 옵션으로 다음 실행 시 재인증 불필요.
 
 
+## Screenshot
+
+<img width="887" height="196" alt="Image" src="https://github.com/user-attachments/assets/cc2fee75-a9ce-46e0-848c-fb619abd626c" />
