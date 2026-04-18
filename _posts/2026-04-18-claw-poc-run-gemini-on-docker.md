@@ -44,8 +44,11 @@ export GEMINI_API_KEY=your_gemini_api_key_here
 npx ts-node discord-bot-gemini.ts
 ```
 
-### Screenshot
-
+### Screenshot 1
 <img width="951" height="751" alt="Image" src="https://github.com/user-attachments/assets/2389bb59-93a1-4fb3-9401-2566ec86760b" />
 
+### Screenshot 2
+<img width="1080" height="2066" alt="Image" src="https://github.com/user-attachments/assets/ba8f0cc1-201d-40a6-920c-adcf741a7146" />
+
+### Screenshot 3
 <img width="897" height="194" alt="Image" src="https://github.com/user-attachments/assets/0f6b85c6-c8d7-46b6-a71e-372f71b93178" />
