@@ -42,4 +42,6 @@ description: desc가 여기에
 * 설정 저장... 컨테이너 끄면 설정 사라짐... 볼륨 마운트 추천...
 
 
+## 스크린샷
 
+<img width="887" height="196" alt="Image" src="https://github.com/user-attachments/assets/456b61d8-b512-4df1-8b4f-e1590b369ee5" />
