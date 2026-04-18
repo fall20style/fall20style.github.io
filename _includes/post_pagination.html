@@ -10,5 +10,11 @@
     {% else %}
       <a href="#" class="pagination--pager disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
     {% endif %}
+    <p>
+      <a href="https://github.com/{{ site.repository }}/edit/{{ site.git_branch | default: 'master' }}/{{ page.path }}" 
+               class="btn btn--light-outline">
+               <i class="fas fa-fw fa-edit" aria-hidden="true"></i> Edit on GitHub
+                 </a>
+    </p>
   </nav>
 {% endif %}
