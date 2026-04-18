@@ -49,7 +49,7 @@ description: desc가 여기에
 
 ### 4. Python Client 임포트 구조
 
-```
+``` python
 import tkinter as tk           # GUI 라이브러리 (기본 창, 레이아웃)
 from tkinter import messagebox # 에러/알림 팝업창
 import requests                # 서버 통신용 HTTP 라이브러리
