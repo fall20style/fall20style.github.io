@@ -1,4 +1,26 @@
-도커로 제미나이 CLI 돌리는 법
+---
+title: Docker로 Gemini CLI 돌리는 법
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Gemini CLI
+  - 습작만들기
+categories:
+  - 습작만들기
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
+
+
+
 
 ## Dockerfile
 
