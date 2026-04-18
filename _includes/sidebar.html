@@ -1,6 +1,13 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
   <div class="sidebar sticky">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+
+  <div class="sidebar__edit">
+      <a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}" class="btn btn--info btn--small">
+          <i class="fab fa-fw fa-github"></i> Edit on GitHub
+      </a>
+  </div>
+
   {% if page.sidebar %}
     {% for s in page.sidebar %}
       {% if s.image %}
