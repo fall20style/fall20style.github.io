@@ -28,14 +28,22 @@ description: desc가 여기에
 
 ## 실행 및 인증
 
-1. 이미지 빌드: `docker build -t gemini-cli .`
+1. 이미지 빌드:
 
-2. 컨테이너 실행: `docker run -it --rm -e GEMINI_API_KEY="본인_키" -v /home/mjpark:/home/mjpark gemini-cli`
+```
+docker build -t gemini-cli .
+```
+
+2. 컨테이너 실행:
+
+```
+docker run -it --rm -e GEMINI_API_KEY="본인_키" -v /home/mjpark:/home/mjpark gemini-cli
+```
 
 3. 구글 계정 인증:
-  * 터미널에 표시되는 URL에 접속
-  * 구글 로그인 후 인증 코드 복사
-  * 터미널에 붙여넣기
+* 터미널에 표시되는 URL에 접속
+* 구글 로그인 후 인증 코드 복사
+* 터미널에 붙여넣기
 
 ## 문제 해결
 
