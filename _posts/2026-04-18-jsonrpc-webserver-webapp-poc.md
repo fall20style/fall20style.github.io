@@ -151,7 +151,7 @@ def call_server():
 curl -X POST http://localhost:5000 \
      -H "Content-Type: application/json" \
      -d '{"jsonrpc": "2.0", "method": "add", "params": {"a": 10, "b": 20}, "id": 1}'
-```     
+```
 
 
 ### 명령어 옵션 설명
@@ -165,4 +165,27 @@ curl -X POST http://localhost:5000 \
 1. 디버깅: 파이썬 GUI 앱에서 에러가 날 때, 이게 서버 문제인지 앱 문제인지 분별할 때 사용. curl로 잘 되면 서버는 정상.
 2. 간편함: 복잡한 UI 코드 짤 필요 없이 명령어 한 줄로 기능을 테스트할 수 있음.
 3. 자동화: 나중에 리눅스 스크립트(.sh) 같은 곳에 넣어서 자동으로 서버에 명령을 내릴 때도 유용.
+
+
+
+### Code
+- [web-py-jsonrpc-poc.zip](https://github.com/user-attachments/files/26854349/web-py-jsonrpc-poc.zip)
+
+### 테스트 - server 플라스크
+
+<img width="781" height="136" alt="Image" src="https://github.com/user-attachments/assets/70471bbc-7134-43a0-8034-ea142edc0baa" />
+
+### 테스트 - python app
+
+<img width="298" height="285" alt="Image" src="https://github.com/user-attachments/assets/3d0934d1-2242-437a-b87e-a75a003be441" />
+
+### 테스트 - curl
+
+``` bash
+curl -X POST http://localhost:5000/      -H "Content-Type: application/json"      -d '{"jsonrpc": "2.0", "method": "add", "params": {"a": 10, "b": 20}, "id": 1}'
+```
+
+``` bash
+{"jsonrpc": "2.0", "result": 30, "id": 1}
+```
 
