@@ -9,6 +9,7 @@ related: true
 popular: true
 tags:
   - geminiCLI
+  - 습작만들기
 categories:
 toc: true
 toc_sticky: true
