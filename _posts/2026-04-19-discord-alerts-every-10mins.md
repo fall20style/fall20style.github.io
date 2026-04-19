@@ -100,3 +100,6 @@ npx ts-node discord-bot-gemini.ts
 * 봇 토큰: 디스코드 개발자 포털에서 봇 생성 후 토큰 복사하여 TOKEN에 붙여넣기.
 * 봇 초대: 서버에 봇을 초대하고 해당 채널에 메시지 보내기 권한 부여 확인.
 
+## Screenshot 
+
+<img width="578" height="308" alt="Image" src="https://github.com/user-attachments/assets/b06dd6b5-fa83-4dde-a62f-178341b154bc" />
