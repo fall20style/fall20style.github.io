@@ -37,7 +37,7 @@ CHANNEL_ID=메시지_보낼_채널_ID_입력
 ## 최종 코드 (discord-bot-gemini.ts)
 TypeScript 타입 에러(string | undefined) 해결 위해 논리적 단언(!) 및 체크 로직 추가.
 
-```
+``` typescript
 // ...
 import dotenv from 'dotenv';
 
@@ -64,7 +64,6 @@ client.once('ready', () => {
       const channel = await client.channels.fetch(CHANNEL_ID!);
 ```
 
-------------------------------
 ## 실행 및 주의사항
 
 * 실행: `npx ts-node discord-bot-gemini.ts`
