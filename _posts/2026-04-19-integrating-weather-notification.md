@@ -119,3 +119,13 @@ client.once(Events.ClientReady, (c) => {
 ## 4. 결론
 
 기상청 날씨 API와 같은 실제 데이터를 통합하여 디스코드 봇의 활용도를 높임.
+
+
+## Screen shot 1
+
+<img width="684" height="86" alt="Image" src="https://github.com/user-attachments/assets/af809208-fce1-41cc-8a1f-17cbd29803ba" />
+
+## Screen shot 2
+
+<img width="431" height="535" alt="Image" src="https://github.com/user-attachments/assets/39a28cd7-43c3-491d-8387-1abf33e6d388" />
+
