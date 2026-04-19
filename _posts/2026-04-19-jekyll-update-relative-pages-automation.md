@@ -1,5 +1,5 @@
 ---
-title: Related Post를 자동으로 생성
+title: Jekyll Related Post를 자동으로 생성
 layout: single
 author_profile: true
 read_time: true
@@ -18,6 +18,7 @@ description: desc가 여기에
 ---
 
 ### gemini CLI를 사용
+
 - post 아래의 page에 Related Posts를 생성해준다.
 
 ### AGENT.md 파일
@@ -26,6 +27,3 @@ description: desc가 여기에
 
 ### Note
 -. this `._post` directory has Jekyll based posts in .md
-
-```
-
