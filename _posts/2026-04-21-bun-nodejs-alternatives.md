@@ -1,5 +1,23 @@
+---
+title: bun 설치 방법, 빠른 이유
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - bun
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 ## Bun 요약: 사용법 및 속도의 비밀
-------------------------------
+
 ## 주요 사용법 (명령어 요약)
 
 * 설치: curl -fsSL https://bun.sh | bash (macOS/Linux/WSL 기준임)
@@ -14,7 +32,6 @@
    * 워치 모드: bun --watch index.ts (코드 수정 시 자동 재시작함)
 * 패키지 실행: bunx [패키지명] (npx 대체용임)
 
-------------------------------
 ## Bun이 빠른 이유
 
 * 엔진의 차이: V8(Node.js) 대신 Safari의 JavaScriptCore(JSC)를 사용함. 시작 속도가 빠르고 메모리 효율이 좋음.

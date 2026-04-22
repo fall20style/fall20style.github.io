@@ -1,46 +1,70 @@
+---
+title: Vim에서 줄 끝의 불필요한 공백을 제거
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - vim
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 Vim에서 줄 끝의 불필요한 공백을 제거하는 설정과 방법
 
 ## 1. 명령어 모드에서 수동 제거
+
 파일 편집 중 즉시 공백을 지우고 싶을 때 사용함.
 
+```
 :%s/\s\+$//e
+```
 
+* `%:` 파일 전체를 대상으로 함.
+* `s:` 문자열을 치환함.
+* `/\s\+$/:` 줄 끝의 공백들을 찾아냄.
+* `//e:` 빈 값으로 바꾸되, 공백이 없어도 에러를 내지 않음.
 
-* %: 파일 전체를 대상으로 함.
-* s: 문자열을 치환함.
-* /\s\+$/: 줄 끝의 공백들을 찾아냄.
-* //e: 빈 값으로 바꾸되, 공백이 없어도 에러를 내지 않음.
-
-------------------------------
 ## 2. 저장 시 자동 제거 설정
+
 .vimrc 파일에 추가하면 파일을 저장할 때마다 자동으로 공백이 삭제됨.
 
+```
 autocmd BufWritePre * %s/\s\+$//e
-
+```
 
 * BufWritePre: 저장 직전에 명령을 실행함.
-* *: 모든 파일에 적용함.
+* 모든 파일에 적용함.
 
-------------------------------
 ## 3. 특정 확장자 제외 설정
+
 마크다운처럼 줄 끝 공백이 필요한 경우를 위해 특정 확장자만 적용하거나 제외할 수 있음.
 특정 언어만 적용할 때:
 
+```
 autocmd FileType c,python,java autocmd BufWritePre <buffer> %s/\s\+$//e
+```
 
 특정 언어(마크다운 등)를 제외할 때:
 
+```
 autocmd BufWritePre * if &ft != 'markdown' | %s/\s\+$//e | endif
+```
 
-------------------------------
 ## 4. 공백 시각화 설정
 어디에 공백이 남았는지 빨간색으로 강조하여 확인하기 좋음.
 
+```
 highlight ExtraWhitespace ctermbg=red guibg=redmatch ExtraWhitespace /\s\+$/
+```
 
-------------------------------
 추가 팁
 
-* 설정 후에는 :source ~/.vimrc를 입력해야 바로 반영됨.
+* 설정 후에는 `:source ~/.vimrc`를 입력해야 바로 반영됨.
 * 불필요한 공백 제거는 협업 시 코드 리뷰나 Diff 확인을 깔끔하게 만들어줌.
