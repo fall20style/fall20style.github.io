@@ -38,11 +38,20 @@ description: desc가 여기에
 
 <img width="604" height="161" alt="Image" src="https://github.com/user-attachments/assets/2b38aa54-0790-4259-979b-c61b7aba7c71" />
 
-#### 샌드박싱 수정
+#### 샌드박싱 수정 - command 1
 
 <img width="572" height="536" alt="Image" src="https://github.com/user-attachments/assets/8c0fe7c5-44fc-49d9-ba4c-9264426fbff7" />
+
+#### 샌드박싱 수정 - command 2
+
+<img width="986" height="447" alt="Image" src="https://github.com/user-attachments/assets/dda7c13d-5a42-4cb6-87a6-cecd9b870eb2" />
+
+#### 샌드박싱 수정 - command 3
+
+<img width="419" height="794" alt="Image" src="https://github.com/user-attachments/assets/b848ac87-a7ca-4704-8993-847a2aabcf5a" />
 
 ### 느낌
 
 1. bun이 시작 시간이 node.js에 비해 빠르다.
 2. typescript로 error를 수정함. 뿌듯했다.
+3. gemini CLI 쿼터가 금방 차는 느낌이다.
