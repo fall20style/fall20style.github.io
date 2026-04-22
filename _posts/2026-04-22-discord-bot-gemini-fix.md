@@ -11,8 +11,15 @@
 [알림] 22:40 메시지 전송 완료
 ```
 
-### Discord Screenshot
-
-
 ### Bun 설치하기
 - https://bun.com/docs/installation
+
+### Discord Screenshot
+
+#### 날씨
+
+<img width="604" height="161" alt="Image" src="https://github.com/user-attachments/assets/2b38aa54-0790-4259-979b-c61b7aba7c71" />
+
+#### 샌드박싱 수정
+
+<img width="572" height="536" alt="Image" src="https://github.com/user-attachments/assets/8c0fe7c5-44fc-49d9-ba4c-9264426fbff7" />
