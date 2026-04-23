@@ -24,12 +24,17 @@ C 함수 선언 시 표준적으로 포함되어야 하는 키워드임.
 ## 3. 코드 적용 예시
 com.app.Helper 클래스의 sendData 메서드를 구현하는 경우임.
 
-// Java: package com.app; class Helper { native void sendData(int n); }// C 이름: Java_com_app_Helper_sendData
+``` C
+// Java: package com.app; class Helper { native void sendData(int n); }
+// C 이름: Java_com_app_Helper_sendData
+```
 
+``` java
 JNIEXPORT void JNICALL Java_com_app_Helper_sendData
   (JNIEnv *env, jobject obj, jint n) {
     // 구현 코드 작성함
 }
+```
 
 ------------------------------
 ## 4. 데이터 타입 매핑
