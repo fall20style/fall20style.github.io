@@ -1,3 +1,20 @@
+---
+title: 디스코드 출석체크 봇 1 - 초기설정, 로그인 기능
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - bun
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 - 디스코드 출석체크 봇의 초기 환경 설정
 - 로그인 구현 내용
