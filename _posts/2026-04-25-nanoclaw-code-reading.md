@@ -102,3 +102,44 @@ const cli = new OneCLISDK.OneCLI();
   - GatewayIntentBits : 권한설정
   - TextChannel : 채팅방 타입
 
+
+### 10. Channel interface 정의 분석
+
+``` typescript
+export interface Channel {                                                                           
+  name: string;                                                                                      
+  connect(): Promise<void>;                                                                          
+  sendMessage(jid: string, text: string): Promise<void>;                                             
+  isConnected(): boolean;                                                                            
+  ownsJid(jid: string): boolean;                                                                     
+  disconnect(): Promise<void>;                                                                       
+  // Optional: typing indicator. Channels that support it implement it.                              
+  setTyping?(jid: string, isTyping: boolean): Promise<void>;                                         
+  // Optional: sync group/chat names from the platform.                                                syncGroups?(force: boolean): Promise<void>;                                                        
+} 
+```
+- 채팅 서비스를 규격화한 설계
+- WhatsApp, Telegram, Slack, Discord 등 서비스를 위 interface로 구현한다.
+- Channel이라는 동일한 방식으로 메시지를 보내고 받을 수 있음.
+
+### 11. Channel 인터페이스를 생성해서 배열로 갖는 코드 channels
+
+``` typescript
+// 1. 다양한 채널들을 담고 있는 배열
+const channels: Channel[] = [
+  new WhatsAppChannel(),
+  new DiscordChannel(),
+  new SlackChannel() // <--- Slack 구현체
+];
+```
+
+### 12. 3가지 apptype에 따라 모두 등록된, Channels에서 JID로 검색해서 어느 채널 소속인지 확인하는 함수
+
+``` typescript
+// 2. 특정 JID(주소)가 어느 채널 소속인지 찾아내는 함수
+function findChannel(channels: Channel[], jid: string): Channel | undefined {
+  // 각 채널의 ownsJid를 호출해서 "이 주소 네 거니?"라고 물어봅니다.
+  return channels.find((ch) => ch.ownsJid(jid));
+}
+```
+- WhatsAppChannel, DiscordChannel, SlackChannel 3가지 모두에서 검색
