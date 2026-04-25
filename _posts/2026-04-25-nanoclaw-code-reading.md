@@ -26,7 +26,7 @@ export const ASSISTANT_NAME =
 -  index.js은 모듈의 진입점
 
 
-### 3 import 괄호 사이의 의미
+### 3. import 괄호 사이의 의미
 
 ``` typescript
 import {
@@ -66,7 +66,7 @@ sessions = {
 };
 ```
 
-### 5. Record > nav 객체 변수 선언 - 3가지 key 제한
+### 6. Record > nav 객체 변수 선언 - 3가지 key 제한
 
 ``` typescript
 type Page = 'home' | 'about' | 'contact';
@@ -79,12 +79,12 @@ home: '/index',
 };
 ```
 
-### 6. 객체 리터럴 구현
+### 7. 객체 리터럴 구현
 
 - 인터페이스가 정의되어 있다면, 함수를 호출할 때, 그 구조에 맞는 객체를 즉석에서 만들어 넘길 수 있음.h:w!
 
 
-### 7. `import { OneCLI } from '@onecli-sh/sdk';`
+### 8. `import { OneCLI } from '@onecli-sh/sdk';`
 
 - 외부 라이브러리(패키지)에서 OneCLI라는 특정 클래스나 도구를 가져오겠다는 의미
 - 전체를 다 가져오는게 아니라 OneCLI만 가져옴
@@ -95,4 +95,10 @@ import * as OneCLISDK from '@onecli-sh/sdk';
 const cli = new OneCLISDK.OneCLI();
 ```
 
+### 9. `import { Client, GatewayIntentBits, TextChannel } from 'discord.js';`
+- discord.js 라이브러리에서 bot을 만드는데 핵심이 되는 3가지 도구를 가져옴
+
+  - Client : 봇의 몸체
+  - GatewayIntentBits : 권한설정
+  - TextChannel : 채팅방 타입
 
