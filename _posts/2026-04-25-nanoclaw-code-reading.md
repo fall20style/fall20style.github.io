@@ -1,5 +1,22 @@
+---
+title: nanoclow code분석-1 : src/index.ts
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - nanoclaw
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
-## nanoclow code분석 src/index.ts
+## nanoclaw code분석 src/index.ts
 
 ### 1. `import './config.js'` 의미
 - src dir 아래에 config.js가 있음
