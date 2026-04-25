@@ -1,5 +1,5 @@
 ---
-title: nanoclow code분석-1 : src/index.ts
+title: nanoclow code분석-1 src/index.ts
 layout: single
 author_profile: true
 read_time: true
