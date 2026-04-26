@@ -118,6 +118,8 @@ Slack은 Discord에 비해 Block Kit을 통한 UI 구성이 매우 유연하다�
 
 ## Related Posts
 - [디스코드 출석체크 봇 1 - 초기설정, 로그인 기능]({% link _posts/2026-04-24-my-attendance-bot-step1.md %})
-- [Prisma DB 핸들링 기초]({% link _posts/2026-04-26-prisma-db-handling.md %})
-- [Slack Echo Bot 환경 구축]({% link _posts/2026-04-26-slackbot-echo-setup.md %})
+- [디스코드 출석체크 봇 2 - Event Driven Architecture]({% link _posts/2026-04-26-discord-bot-event-driven-arch.md %})
+- [디스코드 출석체크 봇 3 - db기능만 떼어서 실험]({% link _posts/2026-04-26-prisma-db-init-test.md %})
+- [디스코드 출석체크 봇 4 - db기능 통합하고 모듈화]({% link _posts/2026-04-26-prisma-db-handling.md %})
+- [Slack App 설정, echo 기능 구현]({% link _posts/2026-04-26-slackbot-echo-setup.md %})
 ---

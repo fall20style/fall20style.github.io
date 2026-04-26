@@ -103,3 +103,7 @@ console.log("⚡️ Slack Echo Bot 실행 중!");
 * 실제 응답: 사용자가 보낸 텍스트(message.text) 앞에 [Bun Echo]:를 붙여서 다시 채널에 전송함.
 * await: 메시지가 안전하게 전송될 때까지 기다림.
 
+
+## Related Posts
+- [Discord 출석체크 봇을 Slack으로 마이그레이션하기]({% link _posts/2026-04-26-attendance-bot-migration-to-slack.md %})
+---

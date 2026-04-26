@@ -159,3 +159,7 @@ pipeline.set_state(PLAYING)
 ## GStreamer는 무엇을 쓸까?
 GStreamer는 내부적으로 Queue 엘리먼트를 쓰기도 하지만, 기본적으로는 제로 카피(Zero-copy)를 지향하며 버퍼의 참조 횟수(Ref-counting)를 관리하는 방식을 혼합 사용.
 
+
+## Related Posts
+- [디스코드 출석체크 봇 2 - Event Driven Architecture]({% link _posts/2026-04-26-discord-bot-event-driven-arch.md %})
+---

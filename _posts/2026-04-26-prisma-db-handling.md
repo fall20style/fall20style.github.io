@@ -135,3 +135,5 @@ graph TD
 - [디스코드 봇 개발 주제 모음]({% link _posts/2026-04-19-discord-bot-toy-project-list.md %})
 - [디스코드 출석체크 봇 1 - 초기설정, 로그인 기능]({% link _posts/2026-04-24-my-attendance-bot-step1.md %})
 - [디스코드 출석체크 봇 3 - db기능만 떼어서 실험]({% link _posts/2026-04-26-prisma-db-init-test.md %})
+- [Discord 출석체크 봇을 Slack으로 마이그레이션하기]({% link _posts/2026-04-26-attendance-bot-migration-to-slack.md %})
+---
