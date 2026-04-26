@@ -1,5 +1,5 @@
 ---
-title: '데이터가 버퍼를 타고 흐른다'는 SW적 의미
+title: 데이터가 버퍼를 타고 흐른다는 SW적 의미
 layout: single
 author_profile: true
 read_time: true
