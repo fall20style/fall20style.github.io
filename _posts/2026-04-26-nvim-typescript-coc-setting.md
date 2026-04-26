@@ -6,6 +6,7 @@ Neovim에서 TypeScript 프로젝트 탐색 설정
 * 이 파일을 수정 후 Neovim을 재시작하거나 :source $MYVIMRC를 입력해야 적용됨.
 
 ## 2. 필수 플러그인 설치
+
 vim-plug를 사용하여 아래 내용을 추가함.
 
 ```
@@ -43,6 +44,7 @@ nmap <silent> gr <Plug>(coc-references)
 ```
 
 ## 4. TypeScript 가독성 향상 팁
+
 코드를 더 잘 읽기 위해 :CocConfig를 입력하고 아래 내용을 추가함.
 
 ```
@@ -53,7 +55,6 @@ nmap <silent> gr <Plug>(coc-references)
   "suggest.noselect": true
 }
 ```
-{
 
 ## 프로젝트 초기화 체크리스트
 
