@@ -1,4 +1,20 @@
-## Slack App 설정 (Web)
+---
+title: Slack App 설정, echo 기능 구현
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - slack
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 ## 1. 앱 생성 및 토큰 발급
 
@@ -19,9 +35,9 @@
 * App Home > Messages Tab에서 Allow users to send... 체크박스 켬. (봇에게 DM 보내기 위함)
 
 
-## 💻 로컬 개발 환경 (Bun + TS)
+## 로컬 개발 환경 (Bun + TS)
 
-## 1. 프로젝트 초기화
+### 1. 프로젝트 초기화
 
 ``` bash
 mkdir slack-echo-bot && cd slack-echo-bot
@@ -29,7 +45,7 @@ bun init -y
 bun add @slack/bolt
 ```
 
-## 2. 환경 변수 설정 (.env)
+### 2. 환경 변수 설정 (.env)
 보안을 위해 토큰을 파일로 관리함.
 
 ```
@@ -37,7 +53,7 @@ SLACK_BOT_TOKEN=xoxb-your-bot-token
 SLACK_APP_TOKEN=xapp-your-app-token
 ```
 
-## 3. 에코 봇 코드 작성 (index.ts)
+### 3. 에코 봇 코드 작성 (index.ts)
 
 ``` typescript
 import { App } from "@slack/bolt";
@@ -56,7 +72,7 @@ await app.start();
 console.log("⚡️ Slack Echo Bot 실행 중!");
 ```
 
-## 실행 및 테스트
+### 실행 및 테스트
 
 * 실행: `bun index.ts` 입력함.
 * 초대: 사용할 채널에 /invite @봇이름으로 봇 초대함. (DM은 필요 없음)
@@ -64,6 +80,7 @@ console.log("⚡️ Slack Echo Bot 실행 중!");
 
 
 ## 코드 분석
+
 ### 1. app.message(...)
 
 * 역할: 슬랙에서 발생하는 메시지 이벤트를 감지하는 리스너임.
