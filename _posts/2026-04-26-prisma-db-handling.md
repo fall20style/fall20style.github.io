@@ -1,3 +1,21 @@
+---
+title: 디스코드 출석체크 봇 4 - db기능 통합하고 모듈화
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - discord
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 
 # 요구사항
 
