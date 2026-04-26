@@ -117,3 +117,7 @@ graph TD
     - 동일한 날에 다시 `/출석`을 시도했을 때 거부되는지 확인.
 - **통합 테스트**: `prisma studio` 또는 `select-all.ts`를 사용하여 `db-mod.ts` 함수가 `dev.db` 파일을 업데이트하는지 확인.
 - **환경 확인**: `.env` 파일에 유효한 디스코드 자격 증명이 올바르게 설정되었는지 확인.
+
+## Screenshot
+
+<img width="385" height="240" alt="Image" src="https://github.com/user-attachments/assets/5a9462ef-dcd8-4799-8926-bd15e8abd14f" />
