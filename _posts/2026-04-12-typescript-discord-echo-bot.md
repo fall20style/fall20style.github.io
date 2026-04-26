@@ -151,3 +151,13 @@ client.login('복사한_토큰');
 ## Related Posts
 - [Docker sandbox 실행 + Discord Bot 통합]({% link _posts/2026-04-12-docker-sandboxing-discord-bot.md %})
 - [Hyper는 프론트엔드 기술로 데스크톱 앱을 만드는 Electron 프레임워크]({% link _posts/2026-04-12-typescript-hyper-project.md %})
+- [디스코드 출석체크 봇 2 - Event Driven Architecture]({% link _posts/2026-04-26-discord-bot-event-driven-arch.md %})
+- [discord-bot-gemini 4.22 수정]({% link _posts/2026-04-22-discord-bot-gemini-fix.md %})
+- [discord.js의 Interaction 타입]({% link _posts/2026-04-25-discord-js-interacraction-button.md %})
+- [discord.js의 Client 이벤트 목록]({% link _posts/2026-04-25-discord-js-event-list.md %})
+- [Discord 매 10분 자동 메시지 전송 기능 구현]({% link _posts/2026-04-19-discord-alerts-every-10mins.md %})
+- [Discord bot 환경 변수 적용 및 타입 에러를 수정]({% link _posts/2026-04-19-discord-bot-env-in-code.md %})
+- [디스코드 봇 개발 주제 모음]({% link _posts/2026-04-19-discord-bot-toy-project-list.md %})
+- [디스코드 출석체크 봇 1 - 초기설정, 로그인 기능]({% link _posts/2026-04-24-my-attendance-bot-step1.md %})
+- [디스코드 출석체크 봇 4 - db기능 통합하고 모듈화]({% link _posts/2026-04-26-prisma-db-handling.md %})
+- [디스코드 출석체크 봇 3 - db기능만 떼어서 실험]({% link _posts/2026-04-26-prisma-db-init-test.md %})

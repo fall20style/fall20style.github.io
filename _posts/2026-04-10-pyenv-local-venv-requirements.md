@@ -78,9 +78,8 @@ pip list
 ```
 
 ## Related Posts
-- [Ubuntu 20.04에서 python 3.14.3 설치]({% link _posts/2026-03-29-python3.14.3-on-ubuntu2004.md %})
-- [Python 3.14.3 venv 구축 및 fastmcp 패키지 설치]({% link _posts/2026-03-29-python3.14.3-pyenv-fastmcp.md %})
-- [Python 3.15-dev 및 fastmcp 환경 구축]({% link _posts/2026-03-29-python3.15dev-pyenv-fastmcp.md %})
-- [pyenv + venv 설정]({% link _posts/2026-04-09-pyenv-venv-setting.md %})
+- [Ubuntu 20.04에서 Python 3.14.3 직접 빌드 및 설치]({% link _posts/2026-03-29-python3.14.3-on-ubuntu2004.md %})
+- [Ubuntu 20.04에서 pyenv로 Python 3.14.3 설치와 FastMCP 테스트]({% link _posts/2026-03-29-python3.14.3-pyenv-fastmcp.md %})
+- [Python 3.15-dev 설치 및 FastMCP 환경 설정 (pyenv)]({% link _posts/2026-03-29-python3.15dev-pyenv-fastmcp.md %})
+- [pyenv-virtualenv를 사용한 프로젝트별 환경 설정]({% link _posts/2026-04-09-pyenv-venv-setting.md %})
 - [Ubuntu 22.04에서 IoTivity 개발을 위한 Python 2.7 환경 구축 (pyenv & Docker)]({% link _posts/2026-04-11-python2.7-pyenv-scons-iotivity.md %})
-

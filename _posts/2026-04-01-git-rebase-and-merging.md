@@ -44,6 +44,6 @@ description: desc가 여기에
 
 
 ## Related Posts
-- [git 여러 commit 합치기]({% link _posts/2026-04-01-git-merging-commits-into-one.md %})
+- [Git 여러 커밋을 하나로 합치기 (Squash)]({% link _posts/2026-04-01-git-merging-commits-into-one.md %})
 - [원본 저장소에서 Fork 없이 바로 PR을 만드는 방법]({% link _posts/2026-04-07-creat-pr-on-org-repo.md %})
 - [github에 comment를 가져오기]({% link _posts/2026-04-02-github-comment-query.md %})

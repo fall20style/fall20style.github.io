@@ -54,8 +54,8 @@ int main() {
 
 
 ## Related Posts
-- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
-- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [push_back보다 emplace_back이 효율적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [C++17 Structured Bindings의 활용]({% link _posts/2026-04-01-Structured_Bindings.md %})
 - [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
 - [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
 - [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

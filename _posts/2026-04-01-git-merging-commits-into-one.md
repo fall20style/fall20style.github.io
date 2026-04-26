@@ -49,6 +49,6 @@ Squash는 주로 `git rebase -i`(인터랙티브 모드)를 사용함.
 
 
 ## Related Posts
-- [git rebase와 merging의 차이]({% link _posts/2026-04-01-git-rebase-and-merging.md %})
+- [Git Rebase와 Merging의 차이 및 활용]({% link _posts/2026-04-01-git-rebase-and-merging.md %})
 - [원본 저장소에서 Fork 없이 바로 PR을 만드는 방법]({% link _posts/2026-04-07-creat-pr-on-org-repo.md %})
 - [github에 comment를 가져오기]({% link _posts/2026-04-02-github-comment-query.md %})

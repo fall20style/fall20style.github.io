@@ -193,8 +193,8 @@ int main() {
 * 결과: App은 내부 로직 수정 없이 상황에 맞는 객체를 사용하게 됨.
 
 ## Related Posts
-- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
-- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
-- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
-- [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
+- [C++ 코딩 테스트용 기본 템플릿]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [push_back보다 emplace_back이 효율적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [C++17 Structured Bindings의 활용]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [FakeIt을 이용한 C++ 모의 객체(Mock) 생성]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
 - [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

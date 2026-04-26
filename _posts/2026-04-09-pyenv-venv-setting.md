@@ -73,10 +73,8 @@ source .venv/bin/activate
 의존성 패키지 목록을 requirements.txt로 관리하는 방법도 알려줄까?
 
 ## Related Posts
-- [Ubuntu 20.04에서 python 3.14.3 설치]({% link _posts/2026-03-29-python3.14.3-on-ubuntu2004.md %})
-- [Python 3.14.3 venv 구축 및 fastmcp 패키지 설치]({% link _posts/2026-03-29-python3.14.3-pyenv-fastmcp.md %})
-- [Python 3.15-dev 및 fastmcp 환경 구축]({% link _posts/2026-03-29-python3.15dev-pyenv-fastmcp.md %})
-- [Python 3.14.0 + pyenv local + venv + 머신러닝 패키지 설치]({% link _posts/2026-04-10-pyenv-local-venv-requirements.md %})
+- [Ubuntu 20.04에서 Python 3.14.3 직접 빌드 및 설치]({% link _posts/2026-03-29-python3.14.3-on-ubuntu2004.md %})
+- [Ubuntu 20.04에서 pyenv로 Python 3.14.3 설치와 FastMCP 테스트]({% link _posts/2026-03-29-python3.14.3-pyenv-fastmcp.md %})
+- [Python 3.15-dev 설치 및 FastMCP 환경 설정 (pyenv)]({% link _posts/2026-03-29-python3.15dev-pyenv-fastmcp.md %})
+- [pyenv local과 requirements.txt 자동 설치 관리]({% link _posts/2026-04-10-pyenv-local-venv-requirements.md %})
 - [Ubuntu 22.04에서 IoTivity 개발을 위한 Python 2.7 환경 구축 (pyenv & Docker)]({% link _posts/2026-04-11-python2.7-pyenv-scons-iotivity.md %})
-
-

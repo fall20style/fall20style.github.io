@@ -68,8 +68,8 @@ int main() {
 * Spying: 실제 객체의 동작을 유지하면서 호출 기록만 추적하는 것도 가능.
 
 ## Related Posts
-- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
-- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
-- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
-- [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
+- [C++ 코딩 테스트용 기본 템플릿]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [push_back보다 emplace_back이 효율적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
+- [C++17 Structured Bindings의 활용]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [CMake 환경에서 FakeIt과 의존성 주입(DI) 설정]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
 - [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

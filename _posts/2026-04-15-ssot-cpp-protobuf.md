@@ -64,10 +64,5 @@ message User {
 - Single Source of Truth를 실현함으로써 대규모 프로젝트의 유지보수 비용을 획기적으로 줄이고, 데이터 불일치로 인한 런타임 버그를 예방할 수 있음.
 
 ## Related Posts
-- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
-- [emplace_back이 더 효과적인 이유]({% link _posts/2026-04-01-emplace_back-effective.md %})
-- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
-- [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
-- [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
-- [HTTP/2 멀티플렉싱과 gRPC]({% link _posts/2026-03-30-http2-multi-flexing-gRPC.md %})
-- [Protobuf, protoc와 gRPC의 관계]({% link _posts/2026-03-30-protobuf-and-gRPC.md %})
+- [HTTP/2 Multiplexing과 gRPC의 관계]({% link _posts/2026-03-30-http2-multi-flexing-gRPC.md %})
+- [Protobuf와 gRPC의 핵심 원리 이해]({% link _posts/2026-03-30-protobuf-and-gRPC.md %})

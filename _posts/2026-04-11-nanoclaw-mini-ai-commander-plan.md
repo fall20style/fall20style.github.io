@@ -83,3 +83,5 @@ https://github.com/fall20style/docker_prep/tree/main/nanoclaw-mini
 - [ZeroClaw 정보]({% link _posts/2026-04-17-zeroclaw-info.md %})
 - [discord bot에서 gemini bot으로 동작하기]({% link _posts/2026-04-18-claw-poc-run-gemini-on-docker.md %})
 - [Docker로 Gemini CLI 돌리는 법]({% link _posts/2026-04-18-how-to-run-gemini-on-docker.md %})
+- [NanoClaw 아키텍처 설계 및 구성 요소 정리]({% link _posts/2026-04-25-nanoclaw-arch-desc.md %})
+- [nanoclow code분석-1 src/index.ts]({% link _posts/2026-04-25-nanoclaw-code-reading.md %})

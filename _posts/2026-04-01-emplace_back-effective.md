@@ -38,8 +38,8 @@ push_back과 emplace_back의 차이는 객체를 만드는 위치.
 
 
 ## Related Posts
-- [Modern C++ CP 골격 코드]({% link _posts/2026-04-01-cp-template-cpp.md %})
-- [Structured Bindings]({% link _posts/2026-04-01-Structured_Bindings.md %})
+- [C++ 코딩 테스트용 기본 템플릿]({% link _posts/2026-04-01-cp-template-cpp.md %})
+- [C++17 Structured Bindings의 활용]({% link _posts/2026-04-01-Structured_Bindings.md %})
 - [CMake로 FakeIt 사용 (의존성 주입)]({% link _posts/2026-04-02-cmake-fakeit-di.md %})
 - [Mock Object 패턴 (FakeIt 사용)]({% link _posts/2026-04-02-mock-object-with-fakeit.md %})
 - [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

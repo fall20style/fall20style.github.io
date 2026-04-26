@@ -67,5 +67,5 @@ python -m grpc_tools.protoc -I. --python_out=. --grpc_python_out=. chat.proto
 
 
 ## Related Posts
-- [HTTP/2 멀티플렉싱과 gRPC]({% link _posts/2026-03-30-http2-multi-flexing-gRPC.md %})
-- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})
+- [HTTP/2 Multiplexing과 gRPC의 관계]({% link _posts/2026-03-30-http2-multi-flexing-gRPC.md %})
+- [SSOT 관점에서의 C++ Protobuf 활용 전략]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})

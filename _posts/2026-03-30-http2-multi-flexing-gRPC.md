@@ -98,5 +98,5 @@ HTTP/2 멀티플렉싱과 gRPC(Protobuf) 조합이 네트워크 지연 시간(La
 
 
 ## Related Posts
-- [Protobuf, protoc와 gRPC의 관계]({% link _posts/2026-03-30-protobuf-and-gRPC.md %})
-- [Protobuf를 활용한 Single Source of Truth(SSOT)]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})
+- [Protobuf와 gRPC의 핵심 원리 이해]({% link _posts/2026-03-30-protobuf-and-gRPC.md %})
+- [SSOT 관점에서의 C++ Protobuf 활용 전략]({% link _posts/2026-04-15-ssot-cpp-protobuf.md %})
