@@ -128,7 +128,7 @@ if __name__ == "__main__":
 
 
 
-``` mermaid
+```mermaid
 classDiagram
     class DebugContext {
         +target_file: str
