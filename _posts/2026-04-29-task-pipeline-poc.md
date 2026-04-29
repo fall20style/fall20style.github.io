@@ -14,6 +14,7 @@ toc: true
 toc_sticky: true
 toc_label: 목차
 description: Task를 연결해서 Pipeline을 구성하는 POC
+mermaid: true
 ---
 
 ## AI 기반 디버깅 루프 POC
