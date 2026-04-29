@@ -4,20 +4,38 @@
 <script type="module">
   import mermaid from 'https://jsdelivr.net';
   
-  // ```mermaid 블록을 div.mermaid로 변환
   document.addEventListener('DOMContentLoaded', function() {
-    const codeBlocks = document.querySelectorAll('pre > code.language-mermaid');
-    codeBlocks.forEach((codeBlock) => {
-      const pre = codeBlock.parentNode;
+    // 1. 모든 mermaid 코드 블록 찾기
+    const codeBlocks = document.querySelectorAll('pre.language-mermaid, .language-mermaid pre, code.language-mermaid');
+    
+    codeBlocks.forEach((block, index) => {
+      // 2. 텍스트 내용 추출 (태그 제외 오직 텍스트만)
+      const content = block.innerText || block.textContent;
+      
+      // 3. 새로운 div 생성
       const div = document.createElement('div');
       div.className = 'mermaid';
-      div.textContent = codeBlock.textContent;
-      pre.replaceWith(div);
+      div.innerHTML = content.trim();
+      
+      // 4. 기존 code/pre 블록을 div로 교체
+      const parent = block.closest('div.highlighter-rouge') || block.closest('pre');
+      if (parent) {
+        parent.replaceWith(div);
+      } else {
+        block.replaceWith(div);
+      }
     });
+
+    // 5. Mermaid 초기화
     mermaid.initialize({ startOnLoad: true, theme: 'default' });
   });
 </script>
-{% endif %}
 
+<style>
+  /* 렌더링 전 글자가 잠깐 보이는 현상 방지 */
+  .language-mermaid { display: none; }
+  .mermaid { display: block !important; }
+</style>
+{% endif %}
 
 <!-- end custom head snippets -->
