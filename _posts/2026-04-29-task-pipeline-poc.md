@@ -124,3 +124,44 @@ if __name__ == "__main__":
 
 모든 프로세스 골격 테스트가 완료되었습니다.
 ```
+
+
+
+``` mermaid
+classDiagram
+    class DebugContext {
+        +target_file: str
+        +exit_code: int
+        +gdb_log: str
+        +ai_response: str
+        +original_code: str
+        +iteration: int
+    }
+
+    class Pipeline {
+        +context: DebugContext
+        +tasks: List[Task]
+        +add_task(task)
+        +run_pipeline()
+    }
+
+    class Task {
+        <<interface>>
+        +name: str
+        +run(context) bool
+    }
+
+    Task <|-- AppExecutionTask : 1. 실행 및 모니터링
+    Task <|-- GDBAnalysisTask : 2. 코어덤프 & GDB 데이터 수집
+    Task <|-- AIAnalysisTask : 3. Gemini AI 분석 및 수정안 도출
+    Task <|-- PatchAndBuildTask : 4. 코드 패치 & Makefile 빌드
+
+    Pipeline o-- Task : 순차적 실행 (Queue)
+    Pipeline ..> DebugContext : 데이터 보관 및 전달
+
+```
+
+
+
+
+
