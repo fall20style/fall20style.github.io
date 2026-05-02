@@ -19,7 +19,9 @@ description: "Docker와 binfmt_misc, QEMU를 활용한 이기종(ARM) 바이너�
 ---
 
 
-## QEMU 환경 기반 ARM 디버깅 가이드## 1. 호스트 환경 설정 (binfmt_misc 등록)
+## QEMU 환경 기반 ARM 디버깅 가이드
+
+## 1. 호스트 환경 설정 (binfmt_misc 등록)
 
 * x86_64 호스트에서 ARM 바이너리를 실행하기 위해 QEMU 인터프리터를 커널에 등록함.
 * privileged 권한으로 실행하여 호스트 커널의 /proc/sys/fs/binfmt_misc 설정을 변경함.
