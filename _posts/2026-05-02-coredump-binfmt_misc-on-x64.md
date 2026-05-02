@@ -90,6 +90,9 @@ gdb test_arm qemu_test_arm_...core
 * GDB 분석 시 파일 타입이 인식되지 않으면 file 명령어로 아키텍처 일치 여부를 먼저 확인해야 함.
 
 ## 인자 목록 분석
+
+<img width="1408" height="768" alt="Image" src="https://github.com/user-attachments/assets/9b0cac7b-caee-4181-b59d-ec441dcfdd96" />
+
 ``` bash
 docker run -it --rm		\
                --privileged	\
