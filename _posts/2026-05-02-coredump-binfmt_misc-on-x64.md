@@ -39,7 +39,7 @@ docker run -it --rm \
   --privileged \
   --cap-add=SYS_PTRACE \
   --security-opt seccomp=unconfined \
-  -v /home/mjpark/work/test_qemu:/work \
+  -v /home/USER/work/test_qemu:/work \
   -w /work \
   --platform linux/arm64 \
   ubuntu:22.04 /bin/bash
@@ -88,5 +88,19 @@ gdb test_arm qemu_test_arm_...core
 * binfmt_misc는 커널이 ARM 바이너리를 만났을 때 QEMU를 자동으로 호출하게 해줌.
 * Docker Buildx는 내부적으로 이 기능을 사용하여 멀티 아키텍처 빌드를 수행함.
 * GDB 분석 시 파일 타입이 인식되지 않으면 file 명령어로 아키텍처 일치 여부를 먼저 확인해야 함.
+
+## 인자 목록 분석
+```
+docker run -it --rm		\
+               --privileged	\
+               --cap-add=SYS_PTRACE	\
+               --security-opt seccomp=unconfined	\
+               -v /home/USER/work/test_qemu:/work	\
+               -w /work	\
+               --platform linux/arm64	\
+               ubuntu:22.04 /bin/bash	\
+```
+
+
 
 
