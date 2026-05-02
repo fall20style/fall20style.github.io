@@ -34,7 +34,7 @@ docker run --privileged --rm tonistiigi/binfmt --install all
 * GDB가 프로세스에 접근할 수 있도록 보안 옵션을 해제함.
 * 호스트의 작업 디렉토리(test_qemu)를 컨테이너 내부로 마운트함.
 
-```
+``` bash
 docker run -it --rm \
   --privileged \
   --cap-add=SYS_PTRACE \
@@ -49,7 +49,7 @@ docker run -it --rm \
 
 * 컨테이너 진입 후 필요한 패키지를 설치함.
 
-```
+``` bash
 apt update && apt install -y gcc gdb file
 ```
 
@@ -71,13 +71,13 @@ ulimit -c unlimited  # 코어 덤프 제한 해제
 
 # 방법 1: 실행 시 인자 지정
 
-```
+``` bash
 gdb test_arm qemu_test_arm_...core
 ```
 
 # 방법 2: GDB 내부에서 로드
 
-```
+``` bash
 (gdb) file test_arm
 (gdb) core-file qemu_test_arm_...core
 (gdb) bt  # 콜 스택 확인
@@ -90,7 +90,7 @@ gdb test_arm qemu_test_arm_...core
 * GDB 분석 시 파일 타입이 인식되지 않으면 file 명령어로 아키텍처 일치 여부를 먼저 확인해야 함.
 
 ## 인자 목록 분석
-```
+``` bash
 docker run -it --rm		\
                --privileged	\
                --cap-add=SYS_PTRACE	\
