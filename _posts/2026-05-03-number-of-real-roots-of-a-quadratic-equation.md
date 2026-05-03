@@ -7,6 +7,7 @@ comments: true
 share: true
 related: true
 popular: true
+use_math: true 
 tags:
   - AI
 toc: true

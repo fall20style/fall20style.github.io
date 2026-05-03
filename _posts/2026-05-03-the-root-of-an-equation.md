@@ -7,7 +7,7 @@ comments: true
 share: true
 related: true
 popular: true
-mathjax: true
+use_math: true 
 tags:
   - math
 toc: true
