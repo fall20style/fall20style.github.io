@@ -8,10 +8,7 @@ share: true
 related: true
 popular: true
 tags:
-  - qemu
-  - binfmt_misc
-categories:
-  - TodoList
+  - AI
 toc: true
 toc_sticky: true
 toc_label: 목차
