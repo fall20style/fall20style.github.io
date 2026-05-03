@@ -8,7 +8,7 @@ share: true
 related: true
 popular: true
 tags:
-  - AI
+  - math
 toc: true
 toc_sticky: true
 toc_label: 목차
