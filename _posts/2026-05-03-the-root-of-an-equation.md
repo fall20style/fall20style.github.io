@@ -15,6 +15,9 @@ toc_label: 목차
 description: "방정식의 해(Root/Solution)"
 ---
 
+<img width="1408" height="768" alt="Image" src="https://github.com/user-attachments/assets/745b6afb-526d-461e-8bf0-05881a710abb" />
+
+
 ## 1. 기본적인 정의
 
 * 방정식을 참으로 만드는 미지수($x$)의 값을 의미함.
