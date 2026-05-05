@@ -81,3 +81,8 @@ NanoClaw는 기본적으로 Claude Agent SDK를 기반으로 하므로, Gemini �
    - `ANTHROPIC_BASE_URL="http://프록시-주소/v1"`
    - `ANTHROPIC_MODEL="gemini-1.5-pro"` (또는 원하는 Gemini 모델명)
 
+## 스크린샷, 숙제
+
+<img width="555" height="474" alt="Image" src="https://github.com/user-attachments/assets/13c8db70-0102-4a1a-b478-efc56ff7ff61" />
+
+- 동작 확인을 해야 함
