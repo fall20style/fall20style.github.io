@@ -1,5 +1,5 @@
 ---
-title: "NanoClaw 설정 및 구성 보고서 - gemini CLI"
+title: "NanoClaw 설정 + gemini CLI"
 layout: single
 author_profile: true
 read_time: true
