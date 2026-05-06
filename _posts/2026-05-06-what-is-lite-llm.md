@@ -9,7 +9,7 @@ related: true
 popular: true
 use_math: true 
 tags:
-  - bash
+  - litellm
 toc: true
 toc_sticky: true
 toc_label: 목차
