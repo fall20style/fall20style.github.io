@@ -41,5 +41,8 @@ description: "LiteLLM이란?"
 * Nanoclaw는 TypeScript 기반 프로젝트이고, LiteLLM은 Python 기반 서버 도구이다.
 * 현재 Python 3.14의 호환성 문제로 설치가 막힌 상태이므로, 안정적인 Python 3.12 환경을 구축하거나 Docker를 사용하는 것이 해결책이다.
 
+### Screenshot 1
 <img width="623" height="468" alt="Image" src="https://github.com/user-attachments/assets/772bb5fa-0209-453b-a623-8af00f16fc50" />
 
+### Screenshot 2
+<img width="898" height="882" alt="Image" src="https://github.com/user-attachments/assets/c85851da-c823-4d72-a489-06e34b6fef21" />
