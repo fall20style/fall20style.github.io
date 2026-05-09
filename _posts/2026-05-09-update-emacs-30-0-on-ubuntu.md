@@ -8,8 +8,7 @@ share: true
 related: true
 popular: true
 tags:
-  - skills
-  - gemini
+  - emacs
 categories:
 toc: true
 toc_sticky: true
