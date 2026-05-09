@@ -17,9 +17,6 @@ toc_label: 목차
 description: "NanoClaw 설정 및 구성 보고서 - gemini CLI"
 ---
 
-
-
-
 **날짜:** 2026-05-05
 **어시스턴트 이름:** Gemini
 **대상 플랫폼:** Linux (Ubuntu/Debian 계열)
