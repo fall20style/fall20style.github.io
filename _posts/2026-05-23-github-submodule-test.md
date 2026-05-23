@@ -87,3 +87,38 @@ git submodule update --init --recursive
 ```
 
 
+----
+
+## Git Submodule 업데이트 방법
+
+외부에서 `child2` 저장소에 기능이 추가되었을 때, `parent1`에서 이를 반영하는 방법임.
+
+### 1. 특정 서브모듈만 원격 최신 상태로 업데이트함
+`parent1` 루트 디렉토리에서 아래 명령어를 실행하여 `child2`를 최신 커밋으로 업데이트함.
+```bash
+git submodule update --remote child2
+```
+
+### 2. 서브모듈 디렉토리에서 직접 가져옴
+서브모듈 경로로 이동하여 일반적인 `git pull`을 수행하는 방식임.
+```bash
+cd child2
+git pull origin main
+cd ..
+```
+
+### 3. 부모 프로젝트에 변경 사항 반영함
+서브모듈의 지점이 변경되었으므로, `parent1`에서도 이를 커밋하고 푸시해야 함.
+```bash
+git add child2
+git commit -m "Update child2 to latest version"
+git push origin main
+```
+
+### 참고사항
+모든 서브모듈을 한꺼번에 최신 상태로 업데이트하려면 아래 명령어를 사용함.
+```bash
+git submodule update --remote
+```
+
+
