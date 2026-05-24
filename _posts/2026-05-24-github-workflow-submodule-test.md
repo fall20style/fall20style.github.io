@@ -1,7 +1,25 @@
+---
+title: "GitHub Actions - 서브모듈(Submodule)을 불러오지 못하는 문제"
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - "github submodule"
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: "GitHub Actions에서 서브모듈(Submodule)을 불러오지 못하는 문제 해결"
+---
 
 
 
-## [Troubleshooting] GitHub Actions에서 서브모듈(Submodule)을 불러오지 못하는 문제 해결
+
+## 
 
 ## 문제 상황
 
