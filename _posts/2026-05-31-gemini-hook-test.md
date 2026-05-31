@@ -102,3 +102,49 @@ Gemini CLI의 Hook은 특정 이벤트(예: `BeforeAgent`, `AfterAgent`)가 발�
 ### 4. 사용 범위
 
 현재 설정한 Hook은 `.gemini/settings.json` 파일이 위치한 `/home/mjpark/work/gemini_log/` 프로젝트 디렉토리 및 그 하위 경로에서만 동작. 이는 Gemini CLI가 해당 프로젝트의 설정을 우선적으로 사용하기 때문. 다른 디렉토리에서 Gemini CLI를 실행할 경우, 이 Hook들은 자동으로 실행되지 않음.
+
+### 5. script로 test하기
+
+```bash
+~/work/gemini_log$ ./test_hooks.sh 
+--- Hook 테스트 시작: Session ID: test-manual-1780240073 ---
+
+[INFO] '.gemini/hooks/before-agent.js' 실행 중...
+{}
+[SUCCESS] 시작 파일이 성공적으로 생성되었습니다: .gemini/tmp/gemini_start_test-manual-1780240073.txt
+
+[INFO] 작업 시간 시뮬레이션 (1초 대기)...
+sleep 1
+
+[INFO] '.gemini/hooks/after-agent.js' 실행 중...
+{}
+
+[INFO] 'CHECKLIST.csv' 파일 내용 확인:
+2026-05-31-08:30:00, test prompt, 0.00s
+2026-05-31-08:35:00, second test, 1.07s
+2026-05-30-23:19:24, keep working, 0.00s
+2026-05-30-23:25:05, 지금껏 작업 내용을 /home/mjpark/work/gemini_log에 README.md, 20.97s
+2026-05-30-23:34:26, 등록된 hook이 뭐가 있는지 list up 해줘, 8.04s
+2026-05-30-23:36:23, 훅은 이 dir 아래에서만 동작하는 건가?, 2.64s
+2026-05-30-23:36:50, 위 설명을 README.md에 추가해 줘., 4.08s
+2026-05-30-23:40:02, hook 작성하는 방법 적어줘. HOOK_GUIDE.md로 저장, 7.14s
+2026-05-31-00:06:13, command를 node를 이용해서 했네. 특별한 이유가 잇어?, 5.20s
+2026-05-31-00:06:31, 이 설명도 README.md에 적어줘, 5.08s
+2026-05-31-00:10:58, 이 dir의 md파일을 모두 읽고  blog에 소개할 수 있도록 post를 작성해 줘. /, 15.25s
+2026-05-31-00:11:53, 이 dir의 md파일을 모두 읽고  blog에 소개할 수 있도록 post를 작성해 줘., 36.03s
+2026-05-31-21:23:46, s, 40.29s
+2026-05-31-23:24:29, 프롬프트 호출 없이  지금 작성한 hook을 test하는 방법을 md파일로 작성해 줘, 19.00s
+2026-05-31-23:25:03, 프롬프트 호출 없이  지금 작성한 hook을 test하는 방법을 md파일로 작성해 줘, 14.73s
+2026-05-31-23:26:55, TEST_HOOK_GUIDE.md 에 저장해 줘, 17.27s
+2026-06-01-00:06:43, TEST_HOOK_GUIDE.md를 읽고 bash script를 작성해 줘, 15.33s
+2026-06-01-00:07:40, Manual test of hook sequence., 0.06s
+2026-06-01-00:07:53, Manual test of hook sequence., 0.05s
+
+[INFO] 임시 시작 파일 삭제 확인...
+[SUCCESS] 임시 시작 파일이 성공적으로 삭제되었습니다.
+
+--- Hook 테스트 완료 ---
+~/work/gemini_log$ ls
+CHECKLIST.csv  HOOK_GUIDE.md  README.md  TEST_HOOK_GUIDE.md  blog_post_about_hooks.md  test_hooks.sh
+~/work/gemini_log$ vi test_hooks.sh 
+```
