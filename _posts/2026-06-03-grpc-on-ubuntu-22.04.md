@@ -1,3 +1,20 @@
+---
+title: "grpc를 ubuntu 22.04에 설치하기"
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - gRPC
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: "grpc를 ubuntu 22.04에 설치하기"
+---
 
 ### grpc를 ubuntu 22.04에 설치하기
 

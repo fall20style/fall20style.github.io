@@ -1,3 +1,20 @@
+---
+title: "grpc hello world 분석"
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - gRPC
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: "grpc hello world 분석"
+---
 
 ## grpc의 예제 코드 동작시키기
 
