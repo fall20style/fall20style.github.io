@@ -6,8 +6,8 @@ read_time: true
 comments: true
 share: true
 related: true
-popular: true
 tags:
+popular: true
   - Git
 categories:
 toc: true
