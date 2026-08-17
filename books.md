@@ -14,6 +14,7 @@ read_time: true
 - 아웃라이어
 - Atomic Habit
 - 오디세이
+- 명상록
 
 ### 고전
 - 톰 소여의 모험
