@@ -5,9 +5,6 @@ permalink: /books/
 comments: false
 ---
 
-- 책읽기
-- 경험하기
-
 
 ### 읽을 책
 
@@ -15,3 +12,6 @@ comments: false
 - 아웃라이어
 - Atomic Habit
 - 오디세이
+
+### 고전
+- 톰 소여의 모험
