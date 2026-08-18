@@ -7,6 +7,9 @@ comments: false
 read_time: true
 ---
 
+### 목표
+1. 9권 읽기
+2. 25권 읽기
 
 ### 읽을 책
 
