@@ -23,7 +23,7 @@ read_time: true
 
 ### 고전
 - 톰 소여의 모험
-- 노인과 바다
+- [노인과 바다](https://gutenberg.ca/ebooks/hemingwaye-oldmanandthesea/hemingwaye-oldmanandthesea-00-h.html)
 - 시크릿 가든
 - 그리스 로마 신화
 - 이솝 우화
