@@ -26,3 +26,4 @@ read_time: true
 - 이솝 우화
 - 오디세이
 - 명상록
+- [국부론](https://www.globalgreyebooks.com/online-ebooks/adam-smith_wealth-of-nations_complete-text.html)
