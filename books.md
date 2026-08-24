@@ -27,3 +27,26 @@ read_time: true
 - 오디세이
 - 명상록
 - [국부론](https://www.globalgreyebooks.com/online-ebooks/adam-smith_wealth-of-nations_complete-text.html)
+
+
+
+### 국내 영자신문
+
+- [코리아헤럴드](https://www.koreaherald.com/)
+- [코리아타임즈](https://www.koreatimes.co.kr)
+- [Pulse](https://pulse.mk.co.kr/)
+- [비즈니스 코리아](https://www.businesskorea.co.kr/)
+
+### 영자신문
+
+- [CNN](https://edition.cnn.com/)
+- [BBC](https://www.bbc.com/)
+- [CNBC](https://www.cnbc.com)
+- [ABC](https://abcnews.com/)
+- [Global Times](https://www.globaltimes.cn/)
+- [NHK Global](https://www3.nhk.or.jp/nhkworld/en/news/)
+- [Times of India](https://timesofindia.indiatimes.com/)
+- [Tiwan Plus](https://www.taiwanplus.com/)
+
+
+
