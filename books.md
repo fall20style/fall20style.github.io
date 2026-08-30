@@ -48,5 +48,8 @@ read_time: true
 - [Times of India](https://timesofindia.indiatimes.com/)
 - [Tiwan Plus](https://www.taiwanplus.com/)
 
+### 온라인 기사 커뮤니티
+- [Substack](https://www.substack.com/)
+
 
 
