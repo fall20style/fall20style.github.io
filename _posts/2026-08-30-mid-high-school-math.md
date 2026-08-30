@@ -1,3 +1,21 @@
+---
+title: 중고교 수학 목차
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - Math
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
 # 중학교 1학년 수학
 
 ## 1. 수와 연산
