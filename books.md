@@ -51,5 +51,10 @@ read_time: true
 ### 온라인 기사 커뮤니티
 - [Substack](https://www.substack.com/)
 
+### 영어 podcast
+- [Speak English Now Podcast - pdf, html 대본 있음](https://speakenglishpodcast.com/special-episode/)
 
 
+
+
+###
