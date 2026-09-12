@@ -1,3 +1,20 @@
+---
+title: 이란 대통령과 인디아 총리의 만남
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - 영자신문
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 
 ## Tehran won’t surrender to the U.S., Iranian President Pezeshkian says, as India’s Modi urges dialogue and peace
