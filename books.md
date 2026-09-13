@@ -52,6 +52,7 @@ read_time: true
 - [Substack](https://www.substack.com/)
 
 ### 영어 podcast
+- [Tim Ferris Podcast - 대본](https://tim.blog/2018/09/20/all-transcripts-from-the-tim-ferriss-show)
 - [Speak English Now Podcast - pdf, html 대본 있음](https://speakenglishpodcast.com/special-episode/)
 - [Luke English Podcast](https://teacherluke.co.uk/archive-of-episodes-1-149/)
 
