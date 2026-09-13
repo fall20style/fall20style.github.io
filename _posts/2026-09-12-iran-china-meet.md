@@ -1,3 +1,22 @@
+---
+title: Modi and Xi are set to meet at BRICS with trade and border issues in spotlight
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - 영자신문
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
+
+## Modi and Xi are set to meet at BRICS with trade and border issues in spotlight
 
 - https://www.cnbc.com/2026/09/11/china-india-modi-xi-brics-meeting-agenda.html
 
