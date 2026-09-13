@@ -58,3 +58,7 @@ read_time: true
 - [No Stupid Questions - 대본](https://freakonomics.com/series/nsq)
 - [Amrican Life - 대본](https://www.thisamericanlife.org)
 
+
+
+### 수학
+1. 2026.09.13 - [33 유리함수](https://blog.naver.com/semomath/222929741339)
