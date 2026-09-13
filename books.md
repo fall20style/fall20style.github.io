@@ -62,3 +62,8 @@ read_time: true
 
 ### 수학
 1. 2026.09.13 - [33 유리함수](https://blog.naver.com/semomath/222929741339)
+
+
+
+### 수학 문제
+1. [유리함수, 절대값](https://youtu.be/Tuj2_tiokMU?si=o7sYT0fa6hiwdACm)
