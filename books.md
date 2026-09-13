@@ -56,3 +56,5 @@ read_time: true
 - [Speak English Now Podcast - pdf, html 대본 있음](https://speakenglishpodcast.com/special-episode/)
 - [Luke English Podcast](https://teacherluke.co.uk/archive-of-episodes-1-149/)
 - [No Stupid Questions - 대본](https://freakonomics.com/series/nsq)
+- [Amrican Life - 대본](https://www.thisamericanlife.org)
+
