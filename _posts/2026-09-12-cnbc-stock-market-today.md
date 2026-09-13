@@ -1,3 +1,20 @@
+---
+title: CNBC stock market today 260912
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+popular: true
+tags:
+  - 영자신문
+categories:
+toc: true
+toc_sticky: true
+toc_label: 목차
+description: desc가 여기에
+---
 
 url: https://www.cnbc.com/2026/09/10/stock-market-today-live-updates.html
 
