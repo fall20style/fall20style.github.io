@@ -1,5 +1,5 @@
 ---
-title: laya - maze game을 AI로 구성
+title: maze game을 AI로 구성
 layout: single
 author_profile: true
 read_time: true
