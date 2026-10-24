@@ -37,11 +37,15 @@ read_time: true
 - [Pulse](https://pulse.mk.co.kr/)
 - [비즈니스 코리아](https://www.businesskorea.co.kr/)
 
+###  Teenagers 영자 뉴스
+- [BBC Teenagers](https://www.bbc.co.uk/newsround)
+- [CBS News Teenagers](https://www.cbsnews.com/tag/teenagers/)
+
+
 ### 영자신문
 
 - [CNN](https://edition.cnn.com/)
 - [BBC](https://www.bbc.com/)
-- [BBC 청소년](https://www.bbc.co.uk/newsround)
 - [CNBC](https://www.cnbc.com)
 - [ABC](https://abcnews.com/)
 - [Global Times](https://www.globaltimes.cn/)
