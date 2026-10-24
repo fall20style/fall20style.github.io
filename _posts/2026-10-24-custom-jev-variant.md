@@ -52,8 +52,10 @@ LoRA 가중치 완전 병합 (Merge & Unload) ──(Optimum)──> ONNX 가속
 #### 3.1 Jev 스타일 데이터 스키마
 
 단순 텍스트 분류가 아닌 문맥(state)과 평가 기준(question)을 동적으로 결합하는 의사결정 구조를 가집니다.
+
 - 포맷: {"state": "뉴스 제목", "question": "평가 질문", "target": 카테고리 인덱스}
 - 카테고리 매핑 레이아웃 (총 7개 클래스):
+
 ```
 	0: 정치, 1: 경제, 2: 사회, 3: 생활/문화, 4: 세계, 5: IT/과학, 6: 날씨
 ```
@@ -64,7 +66,7 @@ LoRA 가중치 완전 병합 (Merge & Unload) ──(Optimum)──> ONNX 가속
 
 ### 4. 모델 훈련 및 의존성 설계 (Training & Optimization)
 
-- 베이스 백본 모델: answerdotai/ModernBERT-base
+- 베이스 백본 모델: `answerdotai/ModernBERT-base`
 - PEFT(LoRA) 레이어 우회 타겟팅: torchao 버전 충돌 문제를 우회하고 ModernBERT 구조에 최적화하기 위해 추적 대상 선형 레이어를 수동으로 선언합니다
 
 ```
