@@ -21,4 +21,4 @@ description: desc가 여기에
 - 코딩없이 가능
 
 ### github 위치
-- [https://github.com/NandhaKishorM/laya](https://github.com/fall20style/ai_maze_game)
+- https://github.com/fall20style/ai_maze_game
