@@ -1,5 +1,5 @@
 ---
-title: Opencode에서 DeepSeek V4.1 Flash Free 
+title: Opencode에서 DeepSeek V4.1 Flash Free 해보기 
 layout: single
 author_profile: true
 read_time: true
