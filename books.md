@@ -41,6 +41,7 @@ read_time: true
 
 - [CNN](https://edition.cnn.com/)
 - [BBC](https://www.bbc.com/)
+- [BBC 청소년](https://www.bbc.co.uk/newsround)
 - [CNBC](https://www.cnbc.com)
 - [ABC](https://abcnews.com/)
 - [Global Times](https://www.globaltimes.cn/)
