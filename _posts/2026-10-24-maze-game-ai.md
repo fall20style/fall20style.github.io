@@ -22,3 +22,4 @@ description: desc가 여기에
 
 ### github 위치
 - https://github.com/fall20style/ai_maze_game
+<img width="1180" height="860" alt="Image" src="https://github.com/user-attachments/assets/6c7698ee-4316-48be-957c-26addf67554f" />
