@@ -76,3 +76,5 @@ danger 0 1 0 food fwd 4 side -1 dist 5 tail dx 0 dy 2 len 3 area 97 free 0.97 ag
 - 저장소: bert-tiny-snake-game
 - 구현 설명: `TECHNICAL.md`
 - 루프 로그 분석: `LOOP_ANALYSIS.md`
+
+<img width="600" height="419" alt="Image" src="https://github.com/user-attachments/assets/6abc9221-80f2-4f5e-bd49-aeb789f6e95d" />
