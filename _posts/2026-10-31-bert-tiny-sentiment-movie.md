@@ -16,7 +16,7 @@ toc_label: 목차
 description: desc가 여기에
 ---
 
-## 16GB CPU 환경에서 구축한 완전 오프라인 '재귀적 자기개선(Recursive Self-Improvement)' 데이터 합성 루프
+## 16GB CPU 환경에서 구축 - 재귀적 자기개선 데이터 합성 루프
 
 - 오프라인 환경에서 작동하는 한국어 리워드 모델(Reward Model) 구축 및 에이전트 선순환 진화 루프 삽질기
 
