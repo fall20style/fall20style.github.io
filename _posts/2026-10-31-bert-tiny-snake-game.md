@@ -73,6 +73,6 @@ danger 0 1 0 food fwd 4 side -1 dist 5 tail dx 0 dy 2 len 3 area 97 free 0.97 ag
 
 ## 코드
 
-- 저장소: <https://github.com/fall20style/bert-tiny-snake-game>
+- 저장소: bert-tiny-snake-game
 - 구현 설명: `TECHNICAL.md`
 - 루프 로그 분석: `LOOP_ANALYSIS.md`
