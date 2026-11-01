@@ -33,7 +33,7 @@ description: desc가 여기에
   <em>▲ 1. 마우스 드로잉 및 실시간 예측 &nbsp;&nbsp;|&nbsp;&nbsp; 2. 오답 정정 피드백 팝업 &nbsp;&nbsp;|&nbsp;&nbsp; 3. '분류 불가능' 판정 예시</em>
 </p>
 
-- 처음에 X를 틀리게 분류한 것을 다시 학습시키면, 맞게 분류함.
+- 처음에 X를 분류 불가능으로 봤지만, 다시 학습시키면, 맞게 X로 분류함.
 
 <img width="282" height="412" alt="Image" src="https://github.com/user-attachments/assets/464c9eda-302f-4064-9f37-60c519a2475f" />
 
