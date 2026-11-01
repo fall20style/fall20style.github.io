@@ -33,6 +33,8 @@ description: desc가 여기에
 📌 [근거 조문 출처] 제15조(개인정보의 수집·이용) ① 개인정보처리자는 다음 각 호의 어느 하...
 ```
 
+<img width="577" height="655" alt="Image" src="https://github.com/user-attachments/assets/8c9aeff3-6cc9-47a7-8ea9-65fb3c26e111" />
+
 ---
 
 ## 왜 "완전 로컬"인가
