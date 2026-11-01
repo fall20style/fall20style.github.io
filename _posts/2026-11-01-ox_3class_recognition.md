@@ -23,6 +23,16 @@ description: desc가 여기에
 - 데이터가 14장밖에 없는 환경에서 **90% 이상의 높은 정확도**를 내고 틀린 결과를 수집해 스스로 진화
 - **액티브 러닝(Active Learning) 파이프라인**
 
+<!-- 1x3 실행 화면 캡처 이미지 레이아웃 추가 -->
+<p align="center">
+  <img width="32%" alt="그리기 화면 및 예측" src="https://github.com/user-attachments/assets/b873c830-9381-48d9-8fdd-b4097566fc8b" />
+  <img width="32%" alt="진짜 정답 피드백 팝업" src="https://github.com/user-attachments/assets/57887d76-e50a-4514-a2fc-6ca9ab6bb347" />
+  <img width="32%" alt="분류 불가능 판정 결과" src="https://github.com/user-attachments/assets/3fa4d8f6-7de6-473f-b646-07f43d2b0a5a" />
+</p>
+<p align="center">
+  <em>▲ 1. 마우스 드로잉 및 실시간 예측 &nbsp;&nbsp;|&nbsp;&nbsp; 2. 오답 정정 피드백 팝업 &nbsp;&nbsp;|&nbsp;&nbsp; 3. '분류 불가능' 판정 예시</em>
+</p>
+
 ---
 
 ## 🚀 프로젝트 핵심 요약
