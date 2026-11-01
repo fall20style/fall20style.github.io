@@ -1,5 +1,5 @@
 ---
-title: 한국어 법률 RAG 챗봇 만들기
+title: 한국어 법률 RAG 챗봇 만들기 PoC
 layout: single
 author_profile: true
 read_time: true
