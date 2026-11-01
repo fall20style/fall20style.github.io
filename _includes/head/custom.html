@@ -38,4 +38,33 @@
 </style>
 {% endif %}
 
+
+
+<!-- ======= Mermaid.js 지원 설정 ======= -->
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+  
+  // Kramdown이 컴파일한 <pre><code class="language-mermaid"> 구조를 
+  // Mermaid가 인식할 수 있는 <pre class="mermaid"> 형태로 변환 후 초기화
+  document.addEventListener("DOMContentLoaded", function () {
+    const mermaidBlocks = document.querySelectorAll('pre code.language-mermaid');
+    mermaidBlocks.forEach((block) => {
+      const pre = block.parentNode;
+      const code = block.textContent;
+      
+      // 새로운 pre 태그 생성 및 클래스 부여
+      const newPre = document.createElement('pre');
+      newPre.className = 'mermaid';
+      newPre.textContent = code;
+      
+      // 기존 구조를 교체
+      pre.parentNode.replaceChild(newPre, pre);
+    });
+    
+    // Mermaid 엔진 작동
+    mermaid.initialize({ startOnLoad: true, theme: 'default' });
+  });
+</script>
+
+
 <!-- end custom head snippets -->
