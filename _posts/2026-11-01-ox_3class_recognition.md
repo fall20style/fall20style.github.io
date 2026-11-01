@@ -116,4 +116,4 @@ Jupyter Notebook의 최신 보안 정책은 셀 내부에서 자바스크립트�
 - **소량의 데이터로 학습을 시작해 사용자의 피드백을 받아 데이터셋을 확장하고 모델을 고도화하는 현대 AI 서비스의 핵심 주기(Data Flywheel)**를 직접 구현
 - 파이토치의 직관적인 제어 능력과 파이썬 기본 GUI의 강력한 결합을 경험
 
-- https://github.com/fall20style/dl_ox_classification
+- dl_ox_classification
