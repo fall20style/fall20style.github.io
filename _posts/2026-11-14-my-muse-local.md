@@ -97,7 +97,24 @@ flowchart LR
 
 ---
 
-## 5. 회고 및 향후 계획 (Next Step)
+## 5. 한 일 
+
+1. Windows 환경에서 Intel Arc A350(VRAM 4GB) Vulkan 백엔드 기반 llama.cpp 로컬 추론 서버 구축
+2. 표준 Windows Python 3.12 가상환경(.venv) 및 Intel Arc GPU(XPU) 지원 PyTorch·HuggingFace 학습 환경 구성
+3. 한국어 특화 경량 언어모델(EXAONE-3.5-2.4B-Instruct) 기반 GGUF 다운로드 및 기본 대화형 CLI 클라이언트(test.py) 구현
+4. 5대 개인비서 기능(일정, 할 일, 요약, 기기 제어, 보안 거절) 커스텀 JSON 스키마 설계 및 합성 학습 데이터셋 생성(make_dataset.py)
+5. 로컬 LoRA 파인튜닝 스크립트(exaon_trainer.py) 개발 및 최신 transformers·peft·trl 호환성 몽키패치 적용
+6. 파인튜닝 가중치 병합, config.json RMSNorm 메타데이터 보정 및 llama.cpp GGUF 포맷 양자화 변환
+7. 서버 생명주기 자동 제어·이중 로깅 모듈(server_manager.py) 및 Before/After 정량 채점 파이프라인(pipeline.py) 구축
+8. MCP(Model Context Protocol) 2.x 기반 날씨 조회 서버(weather_server.py) 및 개인비서 호스트(mcp_assistant.py) 구현
+9. 날씨 조회(WEATHER_GET) 데이터 보강(200건) 및 로컬·Google Colab(T4 GPU) 고속 재학습·GGUF 재생성
+10. Web UI 추론 파라미터(Temperature=0.1) 최적화 및 MCP 연동 통합 테스트 완료
+11. 전체 기술 문서(README.md, INSTALL.md, USAGE.md, TEST_RESULT.md, TROUBLESHOOTING.md, MCP_GUIDE.md, COLAB_GUIDE.md, GIT_GUIDE.md) 및 블로그 포스팅 작성
+12. Git Submodule + Sparse-Checkout 저장소 경량화 및 GitHub 원격 저장소 커밋·푸시
+
+---
+
+## 6. 회고 및 향후 계획 (Next Step)
 
 보급형 4GB VRAM GPU 환경에서도 **양자화(`GGUF`) + 경량 파인튜닝(`LoRA`) + 표준 도구 프로토콜(`MCP`)**을 결합하면 충분히 실용적인 로컬 AI 에이전트를 구축할 수 있음을 확인했습니다.
 
