@@ -1,5 +1,5 @@
 ---
-title: VRAM 4GB 노트북에서 나만의 로컬 AI 비서 만들기
+title: VRAM 4GB 노트북에서 로컬 AI 비서 만들기
 layout: single
 author_profile: true
 read_time: true
