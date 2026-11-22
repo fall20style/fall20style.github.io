@@ -36,6 +36,8 @@ description: desc가 여기에
 - `list_upcoming_events`: 현재 시점 이후 예정된 일정 조회
 - `create_calendar_event`: 한국 표준시(`Asia/Seoul`) 기준 새 일정 등록
 
+<img width="605" height="387" alt="mcp_test_01" src="https://github.com/user-attachments/assets/984bdfd7-c85d-4c0e-851e-d002c3207955" />
+
 ## 진행 과정 및 트러블슈팅
 
 ### 1. SDK v2.x 변경 사항 반영
