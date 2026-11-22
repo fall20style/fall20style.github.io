@@ -1,5 +1,5 @@
 ---
-title: Python으로 Gmail, Google Calendar MCP 서버 구축
+title: Python으로 Gmail, Google Calendar MCP 서버 구축함 (Mock 모드 포함)
 layout: single
 author_profile: true
 read_time: true
@@ -16,9 +16,9 @@ toc_label: 목차
 description: desc가 여기에
 ---
 
-# Python으로 Gmail, Google Calendar MCP 서버 구축
+# Python으로 Gmail, Google Calendar MCP 서버 구축함 (Mock 모드 포함)
 
-직접 만든 Python 에이전트에 연동하기 위해 Gmail과 Google Calendar를 제어하는 MCP(Model Context Protocol) 서버를 구현함.
+직접 만든 Python 에이전트에 연동하기 위해 Gmail과 Google Calendar를 제어하는 MCP(Model Context Protocol) 서버를 구현함. OAuth 인증 없이 에이전트 도구 호출 루프를 테스트할 수 있도록 인메모리 Mock 백엔드를 통합함.
 
 ## 구현 환경
 - **언어 및 패키지**: Python 3.10+, `uv`, `mcp` v2.x SDK, `google-api-python-client`
@@ -36,7 +36,17 @@ description: desc가 여기에
 - `list_upcoming_events`: 현재 시점 이후 예정된 일정 조회
 - `create_calendar_event`: 한국 표준시(`Asia/Seoul`) 기준 새 일정 등록
 
-<img width="605" height="387" alt="mcp_test_01" src="https://github.com/user-attachments/assets/984bdfd7-c85d-4c0e-851e-d002c3207955" />
+## 이중 백엔드 아키텍처 (Real / Mock 전환)
+
+에이전트 개발 및 테스트 시 실제 메일이 발송되거나 캘린더 일정이 오염되는 문제를 막기 위해 환경변수(`USE_MOCK`)로 동작 모드를 분리함.
+
+- **인터페이스 유지**: `server.py`가 노출하는 도구 이름, 파라미터 스키마, 반환 문자열 포맷을 두 모드에서 동일하게 유지함.
+- **Stateful Mock (`mock_backend.py`)**: `MockGoogleWorkspace` 클래스가 메모리 리스트(`emails`, `events`)를 유지함. `send_email`이나 `create_calendar_event` 호출 시 가상 ID를 발급해 메모리에 추가하며, 직후 조회 도구 호출 시 변경된 상태가 그대로 반영됨.
+
+```text
+USE_MOCK="false" (기본값) ──▶ Google Workspace Cloud API (실제 연동)
+USE_MOCK="true"            ──▶ MockGoogleWorkspace (인메모리 테스트)
+```
 
 ## 진행 과정 및 트러블슈팅
 
@@ -50,7 +60,10 @@ description: desc가 여기에
 - `stdio` 모드는 백그라운드 입력 대기 상태이므로 브라우저 인증 창이 자동으로 열리지 않음. 별도 명령어로 `get_credentials()`를 1회 실행해 `token.json`을 미리 생성함.
 - `SCOPES` 설정 시 도메인 뒤에 `/auth/gmail.modify`, `/auth/calendar` 권한 경로를 명시해야 함.
 
+### 3. 서브프로세스 환경변수 전파
+- 클라이언트가 `StdioServerParameters`로 `server.py`를 서브프로세스로 실행할 때 부모 프로세스의 환경변수(`USE_MOCK`)가 자동 상속되지 않는 문제가 발생함.
+- 클라이언트 설정에 `env=dict(os.environ)`을 명시해 환경변수가 서버 프로세스로 전달되도록 해결함.
+
 ## 검증 결과
-- `test_client.py`를 작성해 `stdio` 세션 연결 및 도구 5종의 JSON Schema 노출을 확인함.
-- 메일 검색 후 추출한 ID로 본문 조회, 테스트 메일 발송, 일정 등록 및 재조회까지 정상 작동을 확인함.
-- 설치 가이드(`INSTALL.md`)와 명세(`README.md`)를 정리하고 GitHub `v1.0.0` 릴리즈를 발행함.
+- **Real 모드**: 실제 Gmail 검색, 본문 디코딩, 메일 발송, 캘린더 일정 등록 및 재조회를 검증하고 `v1.0.0` 릴리즈를 발행함.
+- **Mock 모드**: `\$env:USE_MOCK="true"` 설정 후 인증 파일 없이 5종 도구의 상태 변화(`mock_msg_001` 본문 조회, 메일 발송 후 재검색, 일정 추가 후 최상단 반영)를 검증하고 `v1.1.1` 및 아키텍처 문서를 정리함.
